@@ -1,9 +1,9 @@
 /* @import url(); */
 @media only screen and (max-width: 421px ),(max-height: 321px){
     /* ao que tudo indica, basta eu colocar agora como o site fica com essas medidas */
-
-div#imagem{
-    display: none;
+ div#imagem{
+    background-image: none; 
+    font-size: 1em;
 }
 header{
     display: flex;
@@ -162,6 +162,15 @@ div#fundoBege{
     background-image: url('https://iuploads.scribblecdn.net/dfd21d64-01ba-4872-aa84-2ad980bb7215/global/imagelib/vitergan/pattern-ae0846b3548298b0803ab405070ae838f6e51195.png');
     height:470%;
     padding-top:0em;
+}
+div#blocosVitaminas{
+    margin-right: auto;
+    margin-left: auto;
+    width:100%;
+    height: 30em;
+    float: left;
+    font-weight: bold;
+    text-align: center;
 }
 
 div#body3{
@@ -587,6 +596,7 @@ p#direitos{
         float: left;
         font-weight: bold;
         display: flex;
+        text-align: center;
     }
     div#zinco{
         width: 20%;
