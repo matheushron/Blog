@@ -151,12 +151,8 @@ h1#titulo{
 }
 
 
-a#lerMais{
-    color: black;
-    padding-left: 32%;
-    padding-top: 30%;
-    
-}
+
+
 
 div#fundoBege{
     background-image: url('https://iuploads.scribblecdn.net/dfd21d64-01ba-4872-aa84-2ad980bb7215/global/imagelib/vitergan/pattern-ae0846b3548298b0803ab405070ae838f6e51195.png');
@@ -598,6 +594,12 @@ p#direitos{
         display: flex;
         text-align: center;
     }
+    .popup{
+        background-color: white;
+        scale: 1;
+        height: 100px;
+        width: 100px;
+    }
     div#zinco{
         width: 20%;
         cursor: pointer;
@@ -738,10 +740,12 @@ p#direitos{
         
     }
     
-    button#BtnReferencia{
+    a#LinkReferencia{
         border:none;
         background-color: rgba(0, 0, 0, 0);
         color: rgb(253, 101, 0);
+        margin-top: 33.5em;
+        font-weight: 800;
     }
     a{
         color:#f16622
@@ -768,5 +772,45 @@ p#direitos{
 
     div#body3Mobile{
         display: none;
+    }
+
+    .popup-wrapper{
+        display: none;
+        background-color: rgba( 0, 0, 0, .5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .popup{
+        height: 50%;
+        text-align: left;
+        width: 50%;
+        max-width: 50%;
+        margin: 10% auto;
+        padding: 20px;
+        background: white;
+        position: relative;
+
+        /* borda do popup */
+        border-radius: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+    }
+    .popup-close{
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .popup-button{
+        background-color: #00000000;
+        border: none;
+        font-weight: 800;
     }
 }
