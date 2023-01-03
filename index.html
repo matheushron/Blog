@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/802204386a.js" crossorigin="anonymous"></script>
-    <script src="/Application/Js/principal.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/Application/Js/principal.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
         integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -176,6 +176,67 @@
             por diversos motivos. O que não pode acontecer é <strong>deixar o seu organismo sem
                 as vitaminas e os minerais necessários</strong>. Confira uma lista dos mais relevantes:
         </div>
+            <button class="referenciaButton" id="botaoReferencia">
+               <p style="color: #fa5d02;">Referências bibliográficas</p>
+            </button>
+
+            <div  id="popupWrapperReferencial" class="popup-wrapper">
+                <div class="popup" style="height: 700px; margin-top:20px">
+                    <div id="closeRef" class="popup-close">x</div>
+                    <div class="popup-content">
+                        <p class="textoRef">1. Ministério da Saúde. Deficiência de vitamina A [Internet]. 
+                            Biblioteca Virtual em Saúde. Brasília, 2004. Disponível em: 
+                            <a style="color: #fa5d02;" href="https://bvsms.saude.gov.br/bvs/dicas/70vitamina_a.html">
+                            https://bvsms.saude.gov.br/bvs/dicas/70vitamina_a.html</a>
+                        </p>
+                        <p class="textoRef">2. Ramalho A. Vitamina A. International Life Sciences Institute. 2017. Disponível em: 
+                            <a style="color: #fa5d02;" href="http://ilsibrasil.org/wp-content/uploads/sites/9/2017/07/Fasc%C3%ADculo-VITAMINA-A.pdf">
+                                http://ilsibrasil.org/wp-content/uploads/sites/9/2017/07/Fasc%C3%ADculo-VITAMINA-A.pdf</a>
+                        </p>
+                        <p class="textoRef">3. Vannucchi H, Rocha MM, Takeuchi PL. Vitamina C. International Life Sciences Institute. 2017. Disponível em: 
+                            <a style="color: #fa5d02;" href="http://ilsibrasil.org/wp-content/uploads/sites/9/2018/10/Fasc%C3%ADculo-VITAMINA-C.pdf">
+                                http://ilsibrasil.org/wp-content/uploads/sites/9/2018/10/Fasc%C3%ADculo-VITAMINA-C.pdf</a>
+                        </p>
+                        <p class="textoRef">4. Ministério da Saúde. Guia alimentar para a população brasileira [Internet]. Brasília, 2008. Disponível em: 
+                            <a style="color: #fa5d02;" href="https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2008.pdf">
+                                https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2008.pdf</a>
+                        </p>
+                        <p class="textoRef">5. Cohen C, Cardoso JFR, Silva CS, Vannucchi H. Vitamina E. International Life Sciences Institute. 2017. Disponível em: 
+                            <a style="color: #fa5d02;" href="http://ilsibrasil.org/wp-content/uploads/sites/9/2018/10/Fasc%C3%ADculo-VITAMINA-E-1.pdf">
+                                http://ilsibrasil.org/wp-content/uploads/sites/9/2018/10/Fasc%C3%ADculo-VITAMINA-E-1.pdf</a>
+                        </p>
+                        <p class="textoRef">6. Amancio OMS. Cobre. International Life Sciences Institute. Disponível em: 
+                            <a style="color: #fa5d02;" href="http://ilsibrasil.org/wp-content/uploads/sites/9/2017/07/Fasc%C3%ADculo-COBRE.pdf">
+                                http://ilsibrasil.org/wp-content/uploads/sites/9/2017/07/Fasc%C3%ADculo-COBRE.pdf</a>
+                        </p>
+                        <p class="textoRef">7. Oliveira DR, Henriques MCC, Santos LC. Terapia nutricional na doença de Wilson. Rev Bras Nutr Clin 2012; 27 (2): 132-40. </p>
+                        <p class="textoRef">8. Cominetti C, Duarte GBS, Cozzolino SMF. Selênio. International Life Sciences Institute. 2017. Disponível em: 
+                            <a style="color: #fa5d02;" href="http://ilsibrasil.org/wp-content/uploads/sites/9/2017/07/Fasc%C3%ADculo-SEL%C3%8ANIO.pdf">
+                                http://ilsibrasil.org/wp-content/uploads/sites/9/2017/07/Fasc%C3%ADculo-SEL%C3%8ANIO.pdf</a>
+                        </p>
+                        <p class="textoRef">9. Cominetti C, Reis BZ, Cozzolino SMF. Zinco. International Life Sciences Institute. 2017. Disponível em:
+                            <a style="color: #fa5d02;" href="http://ilsibrasil.org/wp-content/uploads/sites/9/2017/07/Fasc%C3%ADculo-ZINCO.pdf">
+                               http://ilsibrasil.org/wp-content/uploads/sites/9/2017/07/Fasc%C3%ADculo-ZINCO.pdf</a>
+                        </p>
+                            
+                    </div>
+                </div>
+            </div> 
+
+            <script>
+                var buttonRef = document.querySelector('#botaoReferencia')
+                var popupRef = document.querySelector('#popupWrapperReferencial')
+                var popupClose = document.querySelector('#closeRef')
+
+                        buttonRef.onclick = function () {
+                            popupRef.style.display = 'block'
+                        };
+
+                        popupClose.onclick = function() {
+                            popupRef.style.display = 'none'
+                        };
+
+            </script>
 
         <div id="dimensaoFrutas" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
             <img src="/Application/imagens/frutas.png" id="frutas">
@@ -588,9 +649,7 @@
                     </script>
                 </div>
             </div>
-            <!-- <button style="margin-top: 33.5em; background-color:rgba(0, 0, 0, 0); border:none">
-                    <a id="referencias"  href="#">Referências bibliográficas</a> 
-                </button> -->
+
         </div>
     </div>
     <div id="body3">

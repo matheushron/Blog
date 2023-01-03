@@ -776,7 +776,7 @@ p#direitos{
 
     .popup-wrapper{
         display: none;
-        background-color: rgba( 0, 0, 0, .5);
+        background-color: rgba(255, 255, 255, 0.5);
         position: fixed;
         top: 0;
         left: 0;
@@ -800,6 +800,9 @@ p#direitos{
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
 
+        /* sombra para a div */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     }
     .popup-close{
         position: absolute;
@@ -812,5 +815,16 @@ p#direitos{
         background-color: #00000000;
         border: none;
         font-weight: 800;
+    }
+    .referenciaButton{
+        margin-top: 1.5em; 
+        background-color:rgba(0, 0, 0, 0); 
+        border:none; 
+        margin-left:15%;
+        font-weight: 700;
+        
+    }
+    .textoRef{
+        font-weight: 700;
     }
 }
