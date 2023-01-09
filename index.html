@@ -21,23 +21,25 @@
 <body>
     <div id="imagem" class="imagem">
         <header>
-            <a href="https://vitergan.com.br/">
-                <button id="botao1"><img src="imagens/ViterganZinco.png" width="160" height="40"></button>
-            </a>
-            <a href="https://vitergan.com.br/">
-                <button id="botao2"><img src="imagens/ViterganZincoPL.png" width="160" height="40"></button>
-            </a>
+            
+                <a href="https://vitergan.com.br/">
+                    <button id="botao1"><img class="imagem-dentro-botao-topo" src="/Application/imagens/ViterganZinco.png" width="160" height="40"></button>
+                </a>
+            
+            
+                <a href="https://vitergan.com.br/">
+                    <button id="botao2"><img class="imagem-dentro-botao-topo2" src="/Application/imagens/ViterganZincoPL.png" width="160" height="40"></button>
+                </a>
+            
         </header>
         <div id="texto">
             <h1 id="fonte">O que o Vitergan faz por você?</h1>
-            <div>
-                A nossa saúde e bem-estar dependem de uma série de fatores, inclusive<br> do bom funcionamento do nosso
-                organismo.
-                Muitas vezes, é necessário <br>suplementar alguns nutrientes para compensar deficiências
-                nutricionais<br> e garantir que
-                o corpo funcione da melhor forma possível. Você já <br>conhece o Vitergan?
+            <div id="texto-numero-1">
+                A nossa saúde e bem-estar dependem de uma série de fatores, inclusive do bom funcionamento do nosso
+                organismo.Muitas vezes, é necessário suplementar alguns nutrientes para compensar deficiências
+                nutricionais e garantir que o corpo funcione da melhor forma possível. Você já conhece o Vitergan?
             </div>
-            <div style="margin-top: 10px;">
+            <div id="confira-frase" style="margin-top: 10px;">
                 Confira o conteúdo até o final para pegar todas as dicas e informações!
             </div>
             <div>
@@ -52,65 +54,64 @@
 
     <div id="body2">
         <div>
-            <h2 id="fonte2" style="margin-left: 10%;">O que a pirâmide alimentar representa?</h2>
+            <h2 id="fonte2" >O que a pirâmide alimentar representa?</h2>
 
-            <p style="margin-left: 10%;">Esse é um recurso gráfico que ajuda a visualizar como deve ser o nosso
+            <p id="text-body-2">Esse é um recurso gráfico que ajuda a visualizar como deve ser o nosso
                 consumo
-                diário de cada tipo de nutriente. <br>A divisão em pirâmide engloba diferentes tipos
-                de carboidratos, proteínas e gorduras. A busca desse equilíbrio nas <br>escolhas alimentares
+                diário de cada tipo de nutriente. A divisão em pirâmide engloba diferentes tipos
+                de carboidratos, proteínas e gorduras. A busca desse equilíbrio nas escolhas alimentares
                 influencia a nossa saúde!</p>
         </div>
-        <div> <!-- div para a parte da pirâmide e dos itens-->
-            <div id="piramide" style="padding-top: 0px;">
-                <img id="piramide" src="/Application/imagens/piramide.png" data-aos="zoom-in" data-aos-delay="50"
+        <div class="piramide-itens-lateral"> <!-- div para a parte da pirâmide e dos itens-->
+            <div id="piramide" >
+                    <img id="piramide" src="/Application/imagens/piramide.png" data-aos="zoom-in" data-aos-delay="50"
                     data-aos-duration="1000">
+                <div id="itens" >
 
-                <div id="itens">
-
-                    <div id="item" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+                    <div id="item" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
                         <strong style="color: #ffffff;">Grupo 8</strong>
                         <div style="color: #ffffff;">
                             <p id="descricao">Gorduras (Óleos, gorduras vegetais e oleaginosas)</p>
                         </div>
                     </div>
 
-                    <div id="item" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+                    <div id="item" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
                         <strong style="color: #ffffff;">Grupo 7</strong>
                         <div style="color: #ffffff;">
                             <p id="descricao">Óleos e gorduras<br>120 kcal por porção e 2 porção/dia</p>
                         </div>
                     </div>
 
-                    <div id="item" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+                    <div id="item" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
                         <strong style="color: #ffffff;">Grupo 6</strong>
                         <div style="color: #ffffff;">
                             <p style="margin-top: 0px;">Leguminosas<br>55 kcal por porção e 1 porção/dia</p>
                         </div>
                     </div>
 
-                    <div id="item" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+                    <div id="item" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
                         <strong style="color: #ffffff;">Grupo 5</strong>
                         <div style="color: #ffffff;">Carnes e ovos <br>130 kcal por porção e 2 porções/dia</div>
                     </div>
 
-                    <div id="item" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+                    <div id="item" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
                         <strong style="color: #ffffff;">Grupo 4</strong>
                         <div style="color: #ffffff;">Leites, queijos e iorgurtes <br>120 kcal por porção e 3
                             porções/dia</div>
                     </div>
 
-                    <div id="item" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+                    <div id="item" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
                         <strong style="color: #ffffff;">Grupo 3</strong>
                         <div style="color: #ffffff;">Frutos e sucos de frutas <br>70 kcal por porção e 3 porções/dia
                         </div>
                     </div>
 
-                    <div id="item" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+                    <div id="item" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
                         <strong style="color: #ffffff;">Grupo 2</strong>
                         <div style="color: #ffffff;">Hortaliças <br>15 kcal por porção e 3 porções/dia</div>
                     </div>
 
-                    <div id="item" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+                    <div id="item" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
                         <strong style="color: #ffffff;">Grupo 1</strong>
                         <div style="color: #ffffff;">Cerais, pães, raízes e tubérculos <br>150 kcal por porção e 8
                             porções/dia</div>
@@ -120,7 +121,7 @@
         </div>
     </div>
     <div> <!-- div para parte da célula -->
-        <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+        <div id="texto-de-celulas" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
             <p id="textocel">Outra informação importante sobre o nosso corpo é que as células podem sofrer
                 ação oxidativa. O que significa isso? Quando há um desequilíbrio entre os radicais
                 livres e os antioxidantes (os “protetores”), ocorrem reações químicas em cadeia. Se
@@ -129,35 +130,35 @@
                 e maior probabilidade do desenvolvimento de doenças.</p>
         </div>
 
-        <div id="celulas">
+        <div id="celulas" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
 
-            <div id="celula" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+            <div id="celula" >
                 <div>
                     <img src="/Application/imagens/Cel1.png">
                 </div>
                 <div id="legenda">
-                    <strong>Célula Normal</strong>
+                    <strong class="strong-celulas">Célula Normal</strong>
                 </div>
             </div>
             <div class="arrow-1"></div>
 
-            <div id="celula" data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000">
+            <div id="celula" >
                 <div>
                     <img src="/Application/imagens/Cel2.png">
                 </div>
                 <div id="legenda">
-                    <strong style="text-align: center;">Radicais livres atacando a célula</strong>
+                    <strong class="strong-celulas" >Radicais livres atacando a célula</strong>
                 </div>
             </div>
 
             <div class="arrow-1"></div>
 
-            <div id="celula" data-aos="fade-up" data-aos-delay="50" data-aos-duration="3000">
+            <div id="celula" >
                 <div>
                     <img src="/Application/imagens/Cel3.png">
                 </div>
                 <div id="legenda">
-                    <strong>Célula com estresse oxidativo</strong>
+                    <strong class="strong-celulas" >Célula com estresse oxidativo</strong>
                 </div>
             </div>
 
@@ -224,17 +225,17 @@
             </div> 
 
             <script>
-                var buttonRef = document.querySelector('#botaoReferencia')
+                var buttonRef = document.getElementById('botaoReferencia')
                 var popupRef = document.querySelector('#popupWrapperReferencial')
                 var popupClose = document.querySelector('#closeRef')
+                
+                buttonRef.onclick = function () {
+                popupRef.style.display = 'block'
+                    };
 
-                        buttonRef.onclick = function () {
-                            popupRef.style.display = 'block'
-                        };
-
-                        popupClose.onclick = function() {
-                            popupRef.style.display = 'none'
-                        };
+                popupClose.onclick = function() {
+                popupRef.style.display = 'none'
+                };
 
             </script>
 
@@ -255,9 +256,8 @@
                     </div>
                     <div id="third" style="background-color: #cbbca9;" class="divDeBaixo">
                         <div>
-                            <div id="legendaVitaminas" style="margin-top: 90px;">
-                                Possui ação antioxidante, ligando-se em certos locais nas células para impedir a
-                                formação de radicais livres.
+                            <div id="legendaVitaminas">
+                                O Brasil enquadra-se em um nível de risco médio, sendo que uma parcela de 20,3%...
                             </div>
                             <button id="popupButton" class="popup-button">
                                 Leia mais
@@ -328,7 +328,7 @@
                     </div>
                     <div id="vitC" style="background-color: #fdd066;" class="divDeBaixo">
                         <div>
-                            <div id="legendaVitaminas" style="margin-top: 90px;">
+                            <div id="legendaVitaminas">
                                 Para aumentar a utilização biológica do ferro e de outros minerais de origem
                                 vegetal...<!-- texto de legenda -->
                             </div>
@@ -395,7 +395,7 @@
                     </div>
                     <div id="vitA" style="background-color: #f89053;" class="divDeBaixo">
                         <div>
-                            <div id="legendaVitaminas" style="margin-top: 90px;">
+                            <div id="legendaVitaminas">
                                 A magnitude da inadequação no Brasil entre adultos para a ingestão de vitamina A foi de
                                 78%...<!-- texto de legenda -->
                             </div>
@@ -463,12 +463,12 @@
                     </div>
                     <div id="vitE" style="background-color: #ef4251;" class="divDeBaixo">
                         <div>
-                            <div id="legendaVitaminas" style="margin-top: 90px; color:white;">
+                            <div id="legendaVitaminas" style="color:white;">
                                 Observou-se uma prevalência de inadequação no consumo de vitamina E de 99,9% em homens
                                 e...<!-- texto de legenda -->
                             </div>
                             <button id="popupButtonE" class="popup-button">
-                                <p style="color: white;">Leia mais
+                                <p id="leiaMaisE" style="color: white;">Leia mais
                                     <i class="fa fa-plus-circle" aria-hidden="true" style="color: white;"></i>
                                 </p>
                             </button>
@@ -528,7 +528,7 @@
                     </div>
                     <div id="vitCobre" style="background-color: #492e65;" class="divDeBaixo">
                         <div>
-                            <div id="legendaVitaminas" style="margin-top: 90px; color:white;">
+                            <div id="legendaVitaminas" style=" color:white;">
                                 Alimentos-fonte de cobre: leguminosas (feijões, ervilhas e
                                 lentilhas)...<!-- texto de legenda -->
                             </div>
@@ -592,7 +592,7 @@
                     </div>
                     <div id="vitSelenio" style="background-color: #4f823c;" class="divDeBaixo">
                         <div>
-                            <div id="legendaVitaminas" style="margin-top: 90px; color:white;">
+                            <div id="legendaVitaminas" style=" color:white;">
                                 Alimentos-fonte de cobre: leguminosas (feijões, ervilhas e
                                 lentilhas)...<!-- texto de legenda -->
                             </div>
@@ -652,13 +652,7 @@
 
         </div>
     </div>
-    <div id="body3">
-
-        <div id="fotoLegenda" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-            <img id="vitergans" src="/Application/imagens/Vitergans.png">
-
-            <p style="margin-left: 90px;">Disponíveis em embalagens de 30 e 60 comprimidos.</p>
-        </div>
+    <div id="body3DeskTop">
 
         <div id="textoFinal">
             Agora que você já conhece alguns dos principais nutrientes e sabe a
@@ -667,19 +661,28 @@
             polivitamínicos e poliminerais desenvolvidos pela Marjan Farma com doses
             terapêuticas e componentes de alta qualidade para prevenir a ação danosa
             dos radicais livres nas células do seu corpo.
-        </div>
-
-        <div id="textoFinal" style="margin-top: 1%;">
-            Que tal garantir um reforço para a sua saúde com doses terapêuticas? Conheça
+            <div>
+                Que tal garantir um reforço para a sua saúde com doses terapêuticas? Conheça
             a família Vitergan e invista na sua qualidade de vida.
+            </div>
+            <br>Que tal garantir um reforço para a sua saúde com doses terapêuticas? Conheça
+            a família Vitergan e invista na sua qualidade de vida.
+            
+            <div style="margin-left: 0%;" data-aos="zoom" data-aos-delay="50" data-aos-duration="3000">
+                <a href="https://vitergan.com.br">
+                    <button id="final">COMPRAR AGORA</button>
+                </a>
+            </div>
         </div>
 
-        <div style="margin-left: 7%;" data-aos="zoom" data-aos-delay="50" data-aos-duration="3000">
-            <a href="https://vitergan.com.br">
-                <button id="final">COMPRAR AGORA</button>
-            </a>
-            
+
+        <div id="fotoLegenda">
+            <img id="vitergans" src="/Application/imagens/Vitergans.png">
+
+            <p style="margin-left: 90px;">Disponíveis em embalagens de 30 e 60 comprimidos.</p>
         </div>
+
+
     </div>
 
     <div id="body3Mobile">
@@ -703,25 +706,27 @@
         </div>
 
         <div id="fotoLegenda" data-aos="fade-up" data-aos-delay="50" data-aos-duration="3000">
-            <img id="vitergans" src="/Application/imagens/Vitergans.png">
+            <img id="vitergans" src="/imagens/Vitergans.png">
 
             <p style="margin-left: 30px;">Disponíveis em embalagens de 30 e 60 comprimidos.</p>
         </div>
     </div>
 
     <div id="rodape">
-        <a href="https://www.facebook.com/vitergan.oficial/">
-            <button id="social">
-                <i class="fa fa-brands fa-facebook fa-2x"></i>
-            </button>
-        </a>
+        <div id="sociais">
+            <a id="social" href="https://www.facebook.com/vitergan.oficial/">
+                    <i class="fa fa-brands fa-facebook fa-2x"></i>
+            </a>
+    
+            <a id="social" href="https://www.instagram.com/vitergan.oficial/">
+                    <i class="fa fa-brands fa-square fa-instagram fa-2x"></i>
+            </a>
 
-        <a href="https://www.instagram.com/vitergan.oficial/">
-            <button id="social">
-                <i class="fa fa-brands fa-square fa-instagram fa-2x"></i>
-            </button>
-        </a>
-        <p id="direitos">© 2022 Marjan Farma. Todos os direitos reservados.</p>
+        </div>
+        <div>
+            <p id="direitos">© 2022 Marjan Farma. Todos os direitos reservados.</p>
+        </div>
+        
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
