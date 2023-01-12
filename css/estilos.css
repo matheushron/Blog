@@ -1032,8 +1032,8 @@ div#body3DeskTop{
     margin: auto;
     padding: auto;
     padding-top: 1em;
-    height: 180%;
-    
+    height: 60%;
+    display: flex;
 }
 
 div#textoFinal{
@@ -1065,7 +1065,7 @@ button#final{
     border-bottom-right-radius: 10px;
 }
 img#vitergans{
-    margin-top: -120px;
+    margin-top: -90px;
     width: 100%;
     height: auto;
     /* float: right;  */
