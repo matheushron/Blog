@@ -28,10 +28,17 @@ button#botao2{
 
 }
 .imagem-dentro-botao-topo{
-    width: 120px;
+    height: auto;
+    width: 120%
 }
 .imagem-dentro-botao-topo2{
-    width: 120px;
+    height: auto;
+    width: 120%
+}
+h1#fonte-primeira-frase{
+    margin-top: 10%;
+    font-size: 2em;
+    color: #004c97;
 }
 div#texto{
     margin-top: 50px;
@@ -80,6 +87,7 @@ button#confira{
     border-bottom-right-radius: 10px;
 }
 div#body2{
+    height: 170%;
     width: 100%;
     background-color: #f2f2f2;
     margin: 0px;
@@ -127,7 +135,9 @@ div#item{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
+.texto-cel{
+    margin-top: 10%;
+}
 p#textocel{
     font-weight: 600;
     font-size: 15px;
@@ -137,50 +147,59 @@ p#textocel{
 }
 
 div#celulas{
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 70%;
-    margin-right: 1px;
-    margin-left:12% ;  
+    display: flex;
+    width: 100%;
+    margin-left:0% ;  
     padding-top: 0em;
     text-align: center;
     float: center;
 }
+.tamanho-celula{
+    width: 70%;
+    height: auto;
+}
 div#celula{
-    margin-top:10px;
+    margin-top:0px;
+}
+div#celula1{
+    margin-top: 8px;
 }
 .strong-celulas{
     font-size: 12px;
 }
 .arrow-1 {
-    transform: rotate(90deg);
-    margin-left: 40%;
-    margin-top: 55px;
-    width:50px;
+    margin-top: 25px;
     height:30px;
     display: flex;
   }
   .arrow-1:before {
     content: "";
-    background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
-    width:30px;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 0, 0));
+    width:50px;
     clip-path: polygon(0 10px,calc(100% - 15px) 10px,calc(100% - 15px) 0,100% 50%,calc(100% - 15px) 100%,calc(100% - 15px) calc(100% - 10px),0 calc(100% - 10px));
     animation: a1 1.25s infinite linear;
   }
   @keyframes a1 {
     90%,100%{flex-grow: 1}
   }
-h1#titulo{
+h1#titulo-comoEvitar{
     color: #004c97;
     font-family: 'Myriad Pro', sans-serif;
     margin-right: 0%;
+    margin-left: 5%;
     /* margin-left: 15px; */
-    font-size: 2.0em;
+    font-size: 2.5em;
     line-height: 1.50;
     font-family: 'Myriad Pro', sans-serif;
     font-weight: 700;
     padding-top: 0.5em;
-    text-align: center;
+    text-align: left;
+}
+div#textoDeFrutas{
+    font-size: 1em;
+    margin-left: 5%;
+    padding-right: 5%;
+    font-weight: 340;
 }
 img#frutas{
     margin-left: 0%;
@@ -190,18 +209,49 @@ img#frutas{
 }
 div#fundoBege{
     background-image: url('https://iuploads.scribblecdn.net/dfd21d64-01ba-4872-aa84-2ad980bb7215/global/imagelib/vitergan/pattern-ae0846b3548298b0803ab405070ae838f6e51195.png');
-    height:300%;
+    height:210%;
     padding-top:0em;
 }
 div#blocosVitaminas{
     margin-right: auto;
     margin-left: auto;
     width:100%;
-    height: 30em;
+    height: 25em;
     float: left;
     font-weight: bold;
     text-align: center;
 }
+div#zinco{
+    height: 40%;
+}
+div#vitaminaC{
+    height: 30%;
+}
+div#vitaminaA{
+    height: 50%;
+}
+div#vitaminaE{
+    height: 30%;
+}
+div#cobre{
+    height: 30%;
+}
+div#selenio{
+    height: 30%;
+}
+i[name="seta-desce"]{
+    display: none;
+}
+.paragrafo-frutas{
+    display: block;
+}
+span#span{
+    display: none;
+}
+.divDeBaixo{
+    height: 25%;
+    display: block;
+} 
 button#popupButton{
     display: none;
 }
@@ -227,10 +277,10 @@ div#body3DeskTop{
     margin: auto;
     padding: auto;
     padding-top: 1em;
-    height: 120%; 
+    height: 130%; 
 }
 
-div#textoFinalMobile{
+div#textoFinal{
     padding-right: 10%;
     padding-left: 5%;
     text-align: left;
@@ -238,7 +288,7 @@ div#textoFinalMobile{
     font: inherit;
     width: 100%;
 }
-button#finalMobile{
+button#final{
     margin-left: 0px;
     margin-top: 15px;
     background: #004c97;
@@ -277,8 +327,8 @@ div#rodape{
 }
 a#social{
     margin-top: 2%;
-    height: 30px;
-    width: 30px;
+    height: auto;
+    width: 10%;
     text-align: center;
     background-color: #00000000;
     border: none;
@@ -293,15 +343,16 @@ div#sociais{
 i{
     color: white;
     margin-top: 15px;
-    padding-left: 0px;
+    margin-left: 10%;
     cursor: pointer;
 }
 p#direitos{
     margin-left: 20px;
     float: center;
     color: #ffffff;
-    margin-top: 7px;
+    margin-top: 17%;
     margin-right: 6px;
+    font-size: 10px;
 }
 .popup-wrapper{
     display: none;
@@ -346,12 +397,16 @@ p#direitos{
     font-weight: 800;
 }
 .referenciaButton{
-    margin-top: 1.5em; 
+    margin-top: 24.5em; 
     background-color:rgba(0, 0, 0, 0); 
     border:none; 
-    margin-left:15%;
     font-weight: 700;
-    
+}
+.texto-botao-referencia{
+    margin-top: 45px;
+    text-decoration:underline;
+    color: #fa5d02;
+    font-weight: 100;
 }
 .textoRef{
     font-size: 10px;
@@ -374,7 +429,7 @@ p#direitos{
     background-size: cover;
     box-sizing: border-box;
     padding-bottom: 0em;
-    height: 50%;
+    height: 63%;
     padding-top: 1%;
     margin-right: auto;
     margin-left: auto; 
@@ -401,36 +456,39 @@ button#botao2{
 
 }
 .imagem-dentro-botao-topo{
-    width: 120px;
+    height: auto;
+    width: 65%;
 }
 .imagem-dentro-botao-topo2{
-    width: 120px;
+    height: auto;
+    width: 75%;
 }
 div#texto{
-    margin-top: 20px;
+    margin-top: 5%;
     margin-right: auto;
     margin-left: 5%;
     padding: 0;
     border: 0;
-    /* font-size: 100px; */
     font: inherit;
     vertical-align: baseline;
 }
-h1#fonte{
-    font-size: 20px;
+h1#fonte-primeira-frase{
+    margin-top: -2px;
+    font-size: 1.5em;
     text-align: left;
     color: #004c97;
 }
 div#texto-numero-1{
-    padding-right: 300px;
-    width: 100%;
+    padding-right: 200px;
+    width: 80%;
     text-align: left;
-    font-size: 10px;
+    font-size: 1em;
     font-weight: 600;
 }
 div#confira-frase{
-    padding-right: 50px;
-    font-size: 10px;
+    margin-top: 2%;
+    padding-right: 350px;
+    font-size: 1em;
     font-weight: 600;
 }
 button#confira{
@@ -459,22 +517,22 @@ div#body2{
     margin: 0px;
     padding: 0px;
     padding-top: 2em;
-    /* height: flex; */
+    height: 320%;
 }
 h2#fonte2{
-    margin-left: 10px;
+    font-size: 2.5em;
+    margin-left: 20%;
     padding-right: 70px;
     font-weight: 700;
-    font-size: 20px;
     text-align: left;
     color: #004c97;
 }
 p#text-body-2{
-    font-size: 15px;
-    margin-left: 10px;
-    /* padding-right: 70px; */
+    font-size: 1em;
+    margin-left: 20%;
+    padding-right: 20%;
+    font-weight: 600;
 }
-
 img#piramide{
     /* margin-left: 50px; */
     width: 100%;
@@ -501,35 +559,33 @@ div#item{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
+div#texto-de-celulas{
+    margin-top: -7%;
+}
 p#textocel{
     font-weight: 600;
     font-size: 15px;
     padding-right: 5%;
     padding-left: 5%; 
-    margin-top: 10px;
 }
 
 div#celulas{
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 70%;
+    width: 100%;
     margin-right: 1px;
-    margin-left:12% ;  
+    margin-left:0% ;  
     padding-top: 0em;
     text-align: center;
     float: center;
-}
-div#celula{
-    margin-top:10px;
 }
 .strong-celulas{
     font-size: 12px;
 }
 .arrow-1 {
-    transform: rotate(90deg);
-    margin-left: 45%;
-    margin-top: 55px;
+    transform: rotate(360deg);
+    margin-top: 5.5%;
     width:50px;
     height:30px;
     display: flex;
@@ -557,20 +613,20 @@ h1#titulo{
     text-align: center;
 }
 img#frutas{
-    margin-left: 0%;
-    width: 100%;
+    margin-left: 10%;
+    width: 80%;
     height: auto;
     max-width: 100%;
 }
 div#fundoBege{
     background-image: url('https://iuploads.scribblecdn.net/dfd21d64-01ba-4872-aa84-2ad980bb7215/global/imagelib/vitergan/pattern-ae0846b3548298b0803ab405070ae838f6e51195.png');
-    height:290%;
+    height:250%;
     padding-top:0em;
 }
 div#blocosVitaminas{
     margin-right: auto;
-    margin-left: auto;
-    width:100%;
+    margin-left: 10%;
+    width:80%;
     height: 30em;
     float: left;
     font-weight: bold;
@@ -601,7 +657,7 @@ div#body3DeskTop{
     margin: auto;
     padding: auto;
     padding-top: 1em;
-    height: 280%;
+    height: 120%;
     
 }
 div#textoFinal{
@@ -633,17 +689,12 @@ button#final{
 }
 img#vitergans{
     margin-top: -30px;
-    width: 50%;
+    width: 100%;
     height: auto;
     float: right; 
 }
-.embalagens-desktop{
-    /* margin-top: 20%; */
-    margin-left: 200px;
-}
 div#fotoLegenda{
     margin-top: 80px;
-    /* float: right; */
     color: #3470ab;
     margin-right: 1%;
     font-weight: bolder;
@@ -653,8 +704,10 @@ div#rodape{
     height: 70px;
     background-color: #004c97; 
 }
+div#sociais{
+    margin-top: 3%;
+}
 button#social{
-    margin-top: 2%;
     height: 30px;
     width: 30px;
     text-align: center;
@@ -666,7 +719,6 @@ button#social{
 }
 i{
     color: white;
-    margin-top: 15px;
     padding-left: 0px;
     cursor: pointer;
 }
@@ -674,7 +726,6 @@ p#direitos{
     margin-left: 20px;
     float: center;
     color: #ffffff;
-    margin-top: 7px;
     margin-right: 6px;
 }
 .popup-wrapper{
@@ -720,12 +771,11 @@ p#direitos{
     font-weight: 800;
 }
 .referenciaButton{
-    margin-top: 1.5em; 
+    margin-top: 29.9em; 
     background-color:rgba(0, 0, 0, 0); 
     border:none; 
-    margin-left:15%;
+    margin-left:9%;
     font-weight: 700;
-    
 }
 .textoRef{
     font-size: 10px;
@@ -775,27 +825,30 @@ button#botao2{
 
 }
 .imagem-dentro-botao-topo{
-    width: 120px;
+    width: 40%;
+    height: auto;
 }
 .imagem-dentro-botao-topo2{
-    width: 120px;
+    width: 45%;
+    height: auto;
 }
 div#texto{
-    margin-top: 30px;
+    margin-top: 9%;
     margin-right: auto;
     margin-left: 5%;
     padding: 0;
     border: 0;
-    /* font-size: 100%; */
     font: inherit;
     vertical-align: baseline;
 }
-h1#fonte{
-    font-size: 40px;
+h1#fonte-primeira-frase{
+    margin-top:-5%;
+    font-size: 3.6em;
     text-align: left;
     color: #004c97;
 }
 div#texto-numero-1{
+    margin-top: 40px;
     padding-right: 650px;
     width: 100%;
     text-align: left;
@@ -803,6 +856,7 @@ div#texto-numero-1{
     font-weight: 600;
 }
 div#confira-frase{
+    margin-top: 30px;
     padding-right: 50px;
     font-size: 20px;
     font-weight: 600;
@@ -828,29 +882,28 @@ button#confira{
     border-bottom-right-radius: 10px;
 }
 div#body2{
-    
     width: 100%;
     background-color: #f2f2f2;
     margin: 0px;
     padding: 0px;
     padding-top: 2em;
-    /* height: flex; */
+    height: 150%;
 }
 h2#fonte2{
     margin-left: 10px;
     padding-right: 70px;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 2.5em;
     text-align: center;
     color: #004c97;
 }
 p#text-body-2{
     font-size: 15px;
-    margin-left: 10px;
+    margin-left: 90px;
     text-align: left;
     padding-left: 250px;
     padding-right: 330px;
-    font-weight: 600;
+    font-weight: 500;
 
 }
 div#piramide{
@@ -883,7 +936,9 @@ div#item{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-
+div#texto-de-celulas{
+    margin-top: 3%;
+}
 p#textocel{
     font-weight: 600;
     font-size: 15px;
@@ -906,6 +961,9 @@ div#celulas{
 div#celula{
     margin-top:10px;
 }
+div#texto-de-celulas{
+    margin-top: -7%;
+}
 .strong-celulas{
     font-size: 12px;
 }
@@ -927,20 +985,19 @@ div#celula{
   @keyframes a1 {
     90%,100%{flex-grow: 1}
   }
-h1#titulo{
+h1#titulo-comoEvitar{
     color: #004c97;
     font-family: 'Myriad Pro', sans-serif;
-    margin-right: 0%;
-    /* margin-left: 15px; */
+    margin-left: 25%;
     font-size: 2.0em;
     line-height: 1.50;
     font-family: 'Myriad Pro', sans-serif;
     font-weight: 700;
     padding-top: 0.5em;
-    text-align: center;
+    text-align: left;
 }
 div#textoDeFrutas{
-    padding-left: 25%;
+    margin-left: 25%;
     padding-right: 25%;
     font-weight: 600;
 }
@@ -957,6 +1014,7 @@ div#fundoBege{
     padding-top:0em;
 }
 div#blocosVitaminas{
+    height: 50px;
     display: flex;
     margin-right: auto;
     margin-left: auto;
@@ -966,6 +1024,18 @@ div#blocosVitaminas{
     font-weight: bold;
     text-align: center;
 }
+.divDeBaixo{
+    display: none;
+}
+i[name="seta-desce"]{
+    display: block;
+}
+.paragrafo-frutas{
+    display: none;
+    }
+span#span{
+     display: block;
+    }
 div#zinco{
     width: 16.7%;
     height: 100px;
@@ -1011,17 +1081,14 @@ button#popupButtonA{
     display: block;
 }
 button#popupButtonE{
-    margin-top: -16px;
     margin-left: 20%;
     display: block;
 }
 button#popupButtonCobre{
-    margin-top: -16px;
     margin-left: 20%;
     display: block;
 }
 button#popupButtonSelenio{
-    margin-top: -16px;
     margin-left: 20%;
     display: block;
 }
@@ -1037,7 +1104,7 @@ div#body3DeskTop{
 }
 
 div#textoFinal{
-    padding-top: 15px;
+    padding-top: 4%;
     padding-left: 5%;
     padding-right: 5%;
     text-align: left;
@@ -1082,15 +1149,15 @@ div#fotoLegendaDeskTop{
 div#rodape{
     display: flex;
     width: 100%;
-    height: 70px;
+    height: 6em;
     background-color: #004c97; 
 }
 div#sociais{
+    margin-top: 1%;
     display: flex;
     width: 50%;
 }
 a#social{
-    margin-top: 2%;
     height: 30px;
     width: 30px;
     text-align: center;
@@ -1102,15 +1169,14 @@ a#social{
 }
 i{
     color: white;
-    margin-top: 15px;
     padding-left: 0px;
     cursor: pointer;
 }
 p#direitos{
-    padding-left: 50px;
+    padding-left: 10px;
     float: center;
     color: #ffffff;
-    margin-top: 27px;
+    margin-top: 16%;
     margin-right: 0px;
 }
 .popup-wrapper{
@@ -1155,383 +1221,29 @@ p#direitos{
     border: none;
     font-weight: 800;
 }
+.botao-referencia-div{
+    height: 10%;
+    width: 90%;
+    background-color: #004b97;
+    margin-left: 73px;
+    margin-top: 6em;
+}
 .referenciaButton{
-    margin-top: 1.5em; 
-    background-color:rgba(0, 0, 0, 0); 
-    border:none; 
-    margin-left:25%;
-    font-weight: 700;
-    
-}
-.textoRef{
-    font-size: 15px;
-    font-weight: 700;
-}
-}
-@media only screen and (max-width: 700px ),(max-height: 520px){
-    /* ao que tudo indica, basta eu colocar agora como o site fica com essas medidas */
-    body{
-        width: 100%;
-    }
- div#imagem{
-    width: 100%;
-    width: 100%;
-    background-image: url('https://ion-imagesizer.scribblecdn.net/eyJidWNrZXQiOiJpdXBsb2Fkcy5zY3JpYmJsZWNkbi5uZXQiLCJrZXkiOiJkZmQyMWQ2NC0wMWJhLTQ4NzItYWE4NC0yYWQ5ODBiYjcyMTUvZ2xvYmFsL2ltYWdlbGliL3ZpdGVyZ2FuLzE5MjB3LWJndmllcmdhbi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiZmlsbCJ9fX0=');
-    background-position: right center;
-    background-position: right center;
-    background-position-x: right;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-sizing: border-box;
-    padding-bottom: 0em;
-    height: 80%;
-    padding-top: 1%;
-    margin-right: auto;
-    margin-left: auto; 
-    background-image: none; 
-
-}
-header{
-    display: inline;
-}
-button#botao1{
-    width: 36%;
-    border:none;
-    background-color: #00000000;
-    margin-left:2%;
-    margin-top: 5px;
-
-}
-button#botao2{
-    width: 36%;
-    border: none;
-    background-color: #00000000;
-    margin-left: 20px;
-    margin-top: 15px;
-
-}
-.imagem-dentro-botao-topo{
-    width: 120px;
-}
-.imagem-dentro-botao-topo2{
-    width: 120px;
-}
-div#texto{
-    margin-top: 0px;
-    margin-right: auto;
-    margin-left: 5%;
-    font: inherit;
-    vertical-align: baseline;
-}
-h1#fonte{
-    font-size: 20px;
-    text-align: left;
-    color: #004c97;
-}
-div#texto-numero-1{
-    padding-right: 0px;
-    width: 100%;
-    text-align: left;
-    font-size: 15px;
-}
-div#confira-frase{
-    padding-right: 50px;
-    font-size: 15px;
-}
-button#confira{
     height: 40px;
-    background: #004c97;
-    color: #ffffff !important;
-    border-color: #004c97;
-    font-size: 0.8em;
-    padding: 0.8em 1em;
-    text-align: center;
-    cursor:pointer;
-    border:none;
-    margin-top: 10px;
-    /* margin-left: 15px; */
-
-    /* borda do botão */
-    border-radius: 10px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-div#body2{
-    width: 100%;
-    background-color: #f2f2f2;
-    margin: 0px;
-    padding: 0px;
-    padding-top: 2em;
-    /* height: flex; */
-}
-h2#fonte2{
-    margin-left: 10px;
-    padding-right: 70px;
-    font-weight: 700;
-    font-size: 20px;
-    text-align: left;
-    color: #004c97;
-}
-p#text-body-2{
-    font-size: 15px;
-    margin-left: 10px;
-    /* padding-right: 70px; */
-}
-
-img#piramide{
-    /* margin-left: 50px; */
-    width: 100%;
-}
-
-div#itens{
-    /* margin-left: 35px; */
-    padding-left: 5%; 
-     padding-right:5%;
-    width: 100%;
-    text-align: center;
-    font-size: 10px;
-}
-
-div#item{
-    background-color: #004c97;
-    margin-top: 0px;
-    margin-top: 20px;
-
-    /* arrumando a borda */
-    border-radius: 10px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-p#textocel{
-    font-weight: 600;
-    font-size: 15px;
-    padding-right: 5%;
-    padding-left: 5%; 
-    margin-top: 10px;
-}
-
-div#celulas{
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 70%;
-    margin-right: 1px;
-    margin-left:12% ;  
-    padding-top: 0em;
-    text-align: center;
-    float: center;
-}
-div#celula{
-    margin-top:10px;
-}
-.strong-celulas{
-    font-size: 12px;
-}
-.arrow-1 {
-    transform: rotate(90deg);
-    margin-left: 40%;
-    margin-top: 55px;
-    width:50px;
-    height:30px;
-    display: flex;
-  }
-  .arrow-1:before {
-    content: "";
-    background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
-    width:30px;
-    clip-path: polygon(0 10px,calc(100% - 15px) 10px,calc(100% - 15px) 0,100% 50%,calc(100% - 15px) 100%,calc(100% - 15px) calc(100% - 10px),0 calc(100% - 10px));
-    animation: a1 1.25s infinite linear;
-  }
-  @keyframes a1 {
-    90%,100%{flex-grow: 1}
-  }
-h1#titulo{
-    color: #004c97;
-    font-family: 'Myriad Pro', sans-serif;
-    margin-right: 0%;
-    /* margin-left: 15px; */
-    font-size: 2.0em;
-    line-height: 1.50;
-    font-family: 'Myriad Pro', sans-serif;
-    font-weight: 700;
-    padding-top: 0.5em;
-    text-align: center;
-}
-img#frutas{
-    margin-left: 0%;
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-}
-div#fundoBege{
-    background-image: url('https://iuploads.scribblecdn.net/dfd21d64-01ba-4872-aa84-2ad980bb7215/global/imagelib/vitergan/pattern-ae0846b3548298b0803ab405070ae838f6e51195.png');
-    height:300%;
-    padding-top:0em;
-}
-div#blocosVitaminas{
-    margin-right: auto;
-    margin-left: auto;
-    width:100%;
-    height: 30em;
-    float: left;
-    font-weight: bold;
-    text-align: center;
-}
-button#popupButton{
-    display: none;
-}
-button#popupButtonC{
-    display: none;
-}
-button#popupButtonA{
-    display: none;
-}
-button#popupButtonE{
-    display: none;
-}
-button#popupButtonCobre{
-    display: none;
-}
-button#popupButtonSelenio{
-    display: none;
-}
-
-div#body3DeskTop{
-    display: block;
-    background-color: #f2f2f2 ;
-    margin: auto;
-    padding: auto;
-    padding-top: 3em;
-    height: 280%;
-}
-
-div#textoFinal{
-    padding-left: 5%;
-    padding-right: 10%;
-    text-align: left;
-    font-size: 5%;
-    font: inherit;
-    width: 100%;
-}
-button#final{
-    margin-left: 0px;
-    margin-top: 15px;
-    background: #004c97;
-    color: #ffffff !important;
-    border-color: #004c97;
-    font-size: 0.8em;
-    padding: 0.8em 1em;
-    text-align: center;
-    cursor:pointer;
-    border:none;
-
-    /* borda */
-    border-radius: 10px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-img#vitergans{
-    margin-top: -70px;
-    width: 100%;
-    height: auto;
-    float: right; 
-}
-div#fotoLegenda{
-    margin-top: 100px;
-    /* float: right; */
-    color: #3470ab;
-    margin-right: 1%;
-    font-weight: bolder;
-}
-
-div#rodape{
-    display: flex;
-    height: 70px;
-    background-color: #004c97; 
-}
-button#social{
-    margin-top: 2%;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    background-color: #00000000;
-    border: none;
-    margin-right: 4%;
-    margin-left: 4%;
-    cursor: pointer;
-}
-i{
-    color: white;
-    margin-top: 15px;
-    padding-left: 0px;
-    cursor: pointer;
-}
-p#direitos{
-    margin-left: 5px;
-    float: center;
-    color: #ffffff;
-    margin-top: 7px;
-    margin-right: 6px;
-}
-.popup-wrapper{
-    display: none;
-    background-color: rgba(255, 255, 255, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.popup{
-    height: 50%;
-    text-align: left;
-    width: 100%;
-    max-width: 100%;
-    margin: 10% auto;
-    padding: 20px;
-    background: white;
-    position: relative;
-
-    /* borda do popup */
-    border-radius: 10px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-    /* sombra para a div */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-.popup-close{
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 20px;
-}
-.popup-button{
-    background-color: #00000000;
-    border: none;
-    font-weight: 800;
-}
-.referenciaButton{
-    margin-top: 1.5em; 
+    margin-left: 70px;
+    margin-top: 0em;
     background-color:rgba(0, 0, 0, 0); 
     border:none; 
-    margin-left:15%;
-    font-weight: 700;
-    
+}
+.texto-botao-referencia{
+    margin-top: 45px;
+    text-decoration:underline;
+    color: #fa5d02;
+    font-weight: 100;
 }
 .textoRef{
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 700;
 }
+
 }

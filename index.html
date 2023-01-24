@@ -10,11 +10,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/802204386a.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/Application/Js/principal.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
-        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -33,13 +28,13 @@
             
         </header>
         <div id="texto">
-            <h1 id="fonte">O que o Vitergan faz por você?</h1>
+            <h1 id="fonte-primeira-frase">O que o Vitergan faz por você?</h1>
             <div id="texto-numero-1">
                 A nossa saúde e bem-estar dependem de uma série de fatores, inclusive do bom funcionamento do nosso
                 organismo.Muitas vezes, é necessário suplementar alguns nutrientes para compensar deficiências
                 nutricionais e garantir que o corpo funcione da melhor forma possível. Você já conhece o Vitergan?
             </div>
-            <div id="confira-frase" style="margin-top: 10px;">
+            <div id="confira-frase" >
                 Confira o conteúdo até o final para pegar todas as dicas e informações!
             </div>
             <div>
@@ -119,7 +114,7 @@
             </div>
         </div>
     </div>
-    <div> <!-- div para parte da célula -->
+    <div class="texto-cel"> <!-- div para parte da célula -->
         <div id="texto-de-celulas" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
             <p id="textocel">Outra informação importante sobre o nosso corpo é que as células podem sofrer
                 ação oxidativa. O que significa isso? Quando há um desequilíbrio entre os radicais
@@ -131,9 +126,9 @@
 
         <div id="celulas" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
 
-            <div id="celula" >
+            <div id="celula1" >
                 <div>
-                    <img src="imagens/Cel1.png">
+                    <img class="tamanho-celula" src="imagens/Cel1.png">
                 </div>
                 <div id="legenda">
                     <strong class="strong-celulas">Célula Normal</strong>
@@ -143,7 +138,7 @@
 
             <div id="celula" >
                 <div>
-                    <img src="imagens/Cel2.png">
+                    <img class="tamanho-celula" src="imagens/Cel2.png">
                 </div>
                 <div id="legenda">
                     <strong class="strong-celulas" >Radicais livres atacando a célula</strong>
@@ -154,7 +149,7 @@
 
             <div id="celula" >
                 <div>
-                    <img src="imagens/Cel3.png">
+                    <img class="tamanho-celula" src="imagens/Cel3.png">
                 </div>
                 <div id="legenda">
                     <strong class="strong-celulas" >Célula com estresse oxidativo</strong>
@@ -167,7 +162,7 @@
     <!-- div para parte de alimentos e vitaminas -->
     <div id="fundoBege">
         <div>
-            <h1 id="titulo">Como evitar?</h1>
+            <h1 id="titulo-comoEvitar">Como evitar?</h1>
         </div>
         <div id="textoDeFrutas">
             Como evitar o problema de estresse oxidativo e tantos outros
@@ -176,10 +171,6 @@
             por diversos motivos. O que não pode acontecer é <strong>deixar o seu organismo sem
                 as vitaminas e os minerais necessários</strong>. Confira uma lista dos mais relevantes:
         </div>
-            <button class="referenciaButton" id="botaoReferencia">
-               <p style="color: #fa5d02;">Referências bibliográficas</p>
-            </button>
-
             <div  id="popupWrapperReferencial" class="popup-wrapper">
                 <div class="popup" style="height: 700px; margin-top:20px">
                     <div id="closeRef" class="popup-close">x</div>
@@ -223,21 +214,6 @@
                 </div>
             </div> 
 
-            <script>
-                var buttonRef = document.getElementById('botaoReferencia')
-                var popupRef = document.querySelector('#popupWrapperReferencial')
-                var popupClose = document.querySelector('#closeRef')
-                
-                buttonRef.onclick = function () {
-                popupRef.style.display = 'block'
-                    };
-
-                popupClose.onclick = function() {
-                popupRef.style.display = 'none'
-                };
-
-            </script>
-
         <div id="dimensaoFrutas" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
             <img src="imagens/frutas.png" id="frutas">
 
@@ -249,19 +225,21 @@
                             <strong>Zinco</strong>
                         </div>
                         <div>
-                            <i style="margin-left: 0%; color:black" class="fa fa-chevron-down" aria-hidden="true"
+                            <i name="seta-desce" style="margin-left:0%;color:black" class="fa fa-chevron-down" aria-hidden="true"
                                 id="toggle"></i>
                         </div>
                     </div>
                     <div id="third" style="background-color: #cbbca9;" class="divDeBaixo">
                         <div>
-                            <div id="legendaVitaminas">
-                                O Brasil enquadra-se em um nível de risco médio, sendo que uma parcela de 20,3%...
-                            </div>
-                            <button id="popupButton" class="popup-button">
+                            <div style="background-color: #cbbca9;" id="legendaVitaminas">
+                                <p class="paragrafo-frutas">Possui ação antioxidante além de ligar-se em certos locais 
+                                    nas células para impedira formação de radicais livres.</p>
+                               <span id="span" class="spanZinco">O Brasil enquadra-se em um nível de risco médio, sendo que uma parcela de 20,3%...</span> 
+                               <button id="popupButton" class="popup-button">
                                 Leia mais
                                 <i class="fa fa-plus-circle" aria-hidden="true" style="color: black;"></i>
                             </button>
+                            </div>
                             <!-- ------------------------------------------------- -->
                             <div id="popupWrapper" class="popup-wrapper">
                                 <div class="popup">
@@ -277,41 +255,6 @@
                             <!-- ------------------------------------------------- -->
                         </div>
                     </div>
-                    <div>
-
-                    </div>
-                    <script>
-                        var btnZ = document.querySelector("#toggle")
-                        var containerZ = document.querySelector("#third")
-
-                        btnZ.addEventListener("click", function () {
-                            if (containerZ.style.display == "block") {
-                                containerZ.style.display = "none"
-                            } else {
-                                containerZ.style.display = "block"
-                            }
-                        })
-
-                        var button = document.querySelector('#popupButton')
-                        var popup = document.querySelector('#popupWrapper')
-
-
-                        button.onclick = function () {
-                            popup.style.display = 'block'
-                        };
-
-                        popup.addEventListener('click', event => {
-                            var classNameOfClickedElement = event.target.classList[0]
-                            var classNames = ['popup-close', 'popup-wrapper']
-                            var shouldClosePopup = classNames.some(className =>
-                                className === classNameOfClickedElement)
-
-                            if (shouldClosePopup) {
-                                popup.style.display = 'none'
-                            }
-
-                        })
-                    </script>
                 </div>
 
                 <div id="vitaminaC" style="background-color:#fdd066">
@@ -321,20 +264,22 @@
                             <strong>Vitamina C</strong>
                         </div>
                         <div>
-                            <i style="margin-left: 0%; color:black" class="fa fa-chevron-down" aria-hidden="true"
+                            <i name="seta-desce" style="margin-left: 0%; color:black" class="fa fa-chevron-down" aria-hidden="true"
                                 id="trocaC"></i>
                         </div>
                     </div>
                     <div id="vitC" style="background-color: #fdd066;" class="divDeBaixo">
                         <div>
-                            <div id="legendaVitaminas">
-                                Para aumentar a utilização biológica do ferro e de outros minerais de origem
-                                vegetal...<!-- texto de legenda -->
+                            <div style="background-color: #fdd066;" id="legendaVitaminas">
+                                <p class="paragrafo-frutas">Além da sua ação antioxidante, a vitamina C também auxilia na ação da vitamina E.</p>
+                                <span id="span" class="spanC">Para aumentar a utilização biológica do ferro e de outros minerais de origem vegetal...</span>
+                                <button id="popupButtonC" class="popup-button">
+                                    Leia mais
+                                    <i class="fa fa-plus-circle" aria-hidden="true" style="color: black;"></i>
+                                </button>
                             </div>
-                            <button id="popupButtonC" class="popup-button">
-                                Leia mais
-                                <i class="fa fa-plus-circle" aria-hidden="true" style="color: black;"></i>
-                            </button>
+
+
                             <div id="popupWrapperC" class="popup-wrapper">
                                 <div class="popup">
                                     <div id="closeC" class="popup-close">x</div>
@@ -353,32 +298,6 @@
                             </div>
                         </div>
                     </div>
-                    <script>
-                        var btn = document.querySelector("#trocaC")
-                        var container = document.querySelector("#vitC")
-
-                        btn.addEventListener("click", function () {
-                            if (container.style.display == "block") {
-                                container.style.display = "none"
-                            } else {
-                                container.style.display = "block"
-                            }
-                        })
-
-
-                        var buttonC = document.querySelector('#popupButtonC')
-                        var popupC = document.querySelector('#popupWrapperC')
-                        var closePopupC = document.querySelector('#closeC')
-
-                        buttonC.onclick = function () {
-                            popupC.style.display = 'block'
-                        };
-
-                        closePopupC.onclick = function() {
-                            popupC.style.display = 'none'
-                        }
-              
-                    </script>
                 </div>
 
                 <div id="vitaminaA" style="background-color: #f89053">
@@ -388,20 +307,23 @@
                             <strong>Vitamina A</strong>
                         </div>
                         <div>
-                            <i style="margin-left: 0%; color:black" class="fa fa-chevron-down" aria-hidden="true"
+                            <i name="seta-desce" style="margin-left: 0%; color:black" class="fa fa-chevron-down" aria-hidden="true"
                                 id="trocaA"></i>
                         </div>
                     </div>
                     <div id="vitA" style="background-color: #f89053;" class="divDeBaixo">
                         <div>
-                            <div id="legendaVitaminas">
-                                A magnitude da inadequação no Brasil entre adultos para a ingestão de vitamina A foi de
-                                78%...<!-- texto de legenda -->
+                            <div style="background-color: #f89053;" id="legendaVitaminas">
+                                <p class="paragrafo-frutas">Reduz a ação de redicais livres,moleculas liberadas em reações químicas que ocorrem normalmente no nosso 
+                                    organismo, e que são responsáveis pleo envelhecimento do nosso corpo, causando diversas doenças.</p>
+                                <span id="span" class="spanA">A magnitude da inadequação no Brasil entre adultos para a ingestão de vitamina A foi de78%...</span>
+                            
+                                <button id="popupButtonA" class="popup-button">
+                                    Leia mais
+                                    <i class="fa fa-plus-circle" aria-hidden="true" style="color: black;"></i>
+                                </button>
+                            
                             </div>
-                            <button id="popupButtonA" class="popup-button">
-                                Leia mais
-                                <i class="fa fa-plus-circle" aria-hidden="true" style="color: black;"></i>
-                            </button>
                             <div id="popupWrapperA" class="popup-wrapper">
                                 <div class="popup">
                                     <div id="closeA" class="popup-close">x</div>
@@ -419,34 +341,6 @@
                             </div>
                         </div>
                     </div>
-                    <div> <!--div para o pop-up ao clicar em LEIA MAIS + -->
-
-                    </div>
-                    <script>
-                        var btnA = document.querySelector("#trocaA")
-                        var containerA = document.querySelector("#vitA")
-
-                        btnA.addEventListener("click", function () {
-                            if (containerA.style.display == "block") {
-                                containerA.style.display = "none"
-                            } else {
-                                containerA.style.display = "block"
-                            }
-                        })
-
-                        var buttonA = document.querySelector('#popupButtonA')
-                        var popupA = document.querySelector('#popupWrapperA')
-                        var closePopupA = document.querySelector('#closeA')
-
-                        buttonA.onclick = function () {
-                            popupA.style.display = 'block'
-                        };
-
-                        closePopupA.onclick = function() {
-                            popupA.style.display = 'none'
-                        }
-                    </script>
-
                 </div>
 
                 <div id="vitaminaE" style="background-color:#ef4251">
@@ -456,21 +350,23 @@
                             <strong>Vitamina E</strong>
                         </div>
                         <div>
-                            <i style="margin-left: 0%; color:rgb(255, 248, 248)" class="fa fa-chevron-down"
+                            <i name="seta-desce" style="margin-left: 0%; color:rgb(255, 248, 248)" class="fa fa-chevron-down"
                                 aria-hidden="true" id="trocaE"></i>
                         </div>
                     </div>
                     <div id="vitE" style="background-color: #ef4251;" class="divDeBaixo">
                         <div>
-                            <div id="legendaVitaminas" style="color:white;">
-                                Observou-se uma prevalência de inadequação no consumo de vitamina E de 99,9% em homens
-                                e...<!-- texto de legenda -->
+                            <div style="background-color: #ef4251; color:white;" id="legendaVitaminas">
+                                <p class="paragrafo-frutas">Um antioxidante, ou seja,impede a ação dos radicais livres.</p>
+                                <span id="span" class="spanE">Observou-se uma prevalência de inadequação no consumo de vitamina E de 99,9% em homense...</span>
+                            
+                                <button id="popupButtonE" class="popup-button">
+                                    <p id="leiaMaisE" style="color: white;">Leia mais
+                                        <i class="fa fa-plus-circle" aria-hidden="true" style="color: white;"></i>
+                                    </p>
+                                </button>
+                            
                             </div>
-                            <button id="popupButtonE" class="popup-button">
-                                <p id="leiaMaisE" style="color: white;">Leia mais
-                                    <i class="fa fa-plus-circle" aria-hidden="true" style="color: white;"></i>
-                                </p>
-                            </button>
                             <div id="popupWrapperE" class="popup-wrapper">
                                 <div class="popup">
                                     <div id="closeE" class="popup-close">x</div>
@@ -488,54 +384,33 @@
                             </div>
                         </div>
                     </div>
-                    <script>
-                        var btnE = document.querySelector("#trocaE")
-                        var containerE = document.querySelector("#vitE")
-
-                        btnE.addEventListener("click", function () {
-                            if (containerE.style.display == "block") {
-                                containerE.style.display = "none"
-                            } else {
-                                containerE.style.display = "block"
-                            }
-                        })
-
-                        var buttonE = document.querySelector('#popupButtonE')
-                        var popupE = document.querySelector('#popupWrapperE')
-                        var closePopupE = document.querySelector('#closeE')
-
-                        buttonE.onclick = function () {
-                            popupE.style.display = 'block'
-                        };
-
-                        closePopupE.onclick = function() {
-                            popupE.style.display = 'none'
-                        }
-                    </script>
                 </div>
 
                 <div id="cobre" style="background-color:#492e65">
                     <div id="suba" style="background-color: #492e65;">
-                        <!--div "invisivel" para mostrar o conteudo depois do click-->
+                       
                         <div id="textos123" style="color: white;">
                             <strong>Cobre</strong>
                         </div>
                         <div>
-                            <i style="margin-left: 0%; color:rgb(255, 248, 248)" class="fa fa-chevron-down"
+                            <i name="seta-desce" style="margin-left: 0%; color:rgb(255, 248, 248)" class="fa fa-chevron-down"
                                 aria-hidden="true" id="trocaCobre"></i>
                         </div>
                     </div>
                     <div id="vitCobre" style="background-color: #492e65;" class="divDeBaixo">
                         <div>
-                            <div id="legendaVitaminas" style=" color:white;">
-                                Alimentos-fonte de cobre: leguminosas (feijões, ervilhas e
-                                lentilhas)...<!-- texto de legenda -->
+                            <div id="legendaVitaminas" style=" color:white; background-color: #492e65">
+                                <p class="paragrafo-frutas">Auxiliar na ação de substâncias antioxidantes,tais como a superxido dismutase e ceruplasmina.</p>
+                                <span id="span" class="spanE">Alimentos-fonte de cobre: leguminosas (feijões, ervilhas e lentilhas)...</span>
+
+                            
+                                <button id="popupButtonCobre" class="popup-button">
+                                    <p style="color: white;">Leia mais
+                                        <i class="fa fa-plus-circle" aria-hidden="true" style="color: white;"></i>
+                                    </p>
+                                </button>
+
                             </div>
-                            <button id="popupButtonCobre" class="popup-button">
-                                <p style="color: white;">Leia mais
-                                    <i class="fa fa-plus-circle" aria-hidden="true" style="color: white;"></i>
-                                </p>
-                            </button>
                             <div id="popupWrapperCobre" class="popup-wrapper">
                                 <div class="popup">
                                     <div id="closeCobre" class="popup-close">x</div>
@@ -550,34 +425,8 @@
                             </div>
                         </div>
                     </div>
-                    <div> <!--div para o pop-up ao clicar em LEIA MAIS + -->
-
-                    </div>
-                    <script>
-                        var btnCobre = document.querySelector("#trocaCobre")
-                        var containerCobre = document.querySelector("#vitCobre")
-
-                        btnCobre.addEventListener("click", function () {
-                            if (containerCobre.style.display == "block") {
-                                containerCobre.style.display = "none"
-                            } else {
-                                containerCobre.style.display = "block"
-                            }
-                        })
-
-                        var buttonCobre = document.querySelector('#popupButtonCobre')
-                        var popupCobre = document.querySelector('#popupWrapperCobre')
-                        var closePopupCobre = document.querySelector('#closeCobre')
-
-                        buttonCobre.onclick = function () {
-                            popupCobre.style.display = 'block'
-                        };
-                        closePopupCobre.onclick = function() {
-                            popupCobre.style.display = 'none'
-                        }
-                    </script>
                 </div>
-
+                        
                 <div id="selenio" style="background-color:#4f823c">
                     <div id="suba" style="background-color: #4f823c;">
                         <!--div "invisivel" para mostrar o conteudo depois do click-->
@@ -585,21 +434,25 @@
                             <strong>Selênio</strong>
                         </div>
                         <div>
-                            <i style="margin-left: 0%; color:rgb(255, 248, 248)" class="fa fa-chevron-down"
+                            <i name="seta-desce" style="margin-left: 0%; color:rgb(255, 248, 248)" class="fa fa-chevron-down"
                                 aria-hidden="true" id="trocaSelenio"></i>
                         </div>
                     </div>
                     <div id="vitSelenio" style="background-color: #4f823c;" class="divDeBaixo">
                         <div>
-                            <div id="legendaVitaminas" style=" color:white;">
-                                Alimentos-fonte de cobre: leguminosas (feijões, ervilhas e
-                                lentilhas)...<!-- texto de legenda -->
+                            <div id="legendaVitaminas" style=" color:white; background-color:#4f823c">
+                                <p class="paragrafo-frutas">Atuam no funcionamento de substâncias que participam da imnunidade antioxidante do 
+                                    organismo, tais como a glutationa peroxidase e a tioredoxina redutase.</p>
+                                <span id="span" class="spanE">Alguns estudos realizados no Brasil demonstraram que o país apresenta...</span>
+
+                                <button id="popupButtonSelenio" class="popup-button">
+                                    <p style="color: white;">Leia mais
+                                        <i class="fa fa-plus-circle" aria-hidden="true" style="color: white;"></i>
+                                    </p>
+                                </button>
+
                             </div>
-                            <button id="popupButtonSelenio" class="popup-button">
-                                <p style="color: white;">Leia mais
-                                    <i class="fa fa-plus-circle" aria-hidden="true" style="color: white;"></i>
-                                </p>
-                            </button>
+
                             <div id="popupWrapperSelenio" class="popup-wrapper">
                                 <div class="popup">
                                     <div id="closeSelenio" class="popup-close">x</div>
@@ -623,34 +476,14 @@
                             </div>
                         </div>
                     </div>
-                    <script>
-                        var btnSelenio = document.querySelector("#trocaSelenio")
-                        var containerSelenio = document.querySelector("#vitSelenio")
-
-                        btnSelenio.addEventListener("click", function () {
-                            if (containerSelenio.style.display == "block") {
-                                containerSelenio.style.display = "none"
-                            } else {
-                                containerSelenio.style.display = "block"
-                            }
-                        })
-
-                        var buttonSelenio = document.querySelector('#popupButtonSelenio')
-                        var popupSelenio = document.querySelector('#popupWrapperSelenio')
-                        var closePopupSelenio = document.querySelector('#closeSelenio')
-
-                        buttonSelenio.onclick = function () {
-                            popupSelenio.style.display = 'block'
-                        };
-                        closePopupSelenio.onclick = function() {
-                            popupSelenio.style.display = 'none'
-                        }
-                    </script>
                 </div>
             </div>
-
+            <button class="referenciaButton" id="botaoReferencia" data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000">
+                <p class="texto-botao-referencia">Referências bibliográficas</p>
+             </button>
         </div>
     </div>
+
     <div id="body3DeskTop">
 
         <div id="textoFinal">
@@ -667,7 +500,7 @@
             <br>Que tal garantir um reforço para a sua saúde com doses terapêuticas? Conheça
             a família Vitergan e invista na sua qualidade de vida.
             
-            <div style="margin-left: 0%;" data-aos="zoom" data-aos-delay="50" data-aos-duration="3000">
+            <div data-aos="zoom" data-aos-delay="50" data-aos-duration="3000">
                 <a href="https://vitergan.com.br">
                     <button id="final">COMPRAR AGORA</button>
                 </a>
@@ -687,56 +520,26 @@
 
 
     </div>
-
-    <!-- <div id="body3Mobile">
-    <div>
-    <div id="textoFinalMobile">
-        Agora que você já conhece alguns dos principais nutrientes e sabe a
-        importância de manter seus níveis adequados, é hora de agir contra a
-        deficiência nutricional! <strong>Vitergan Zinco</strong> e <strong>Vitergan Zinco PL</strong>, são
-        polivitamínicos e poliminerais desenvolvidos pela Marjan Farma com doses
-        terapêuticas e componentes de alta qualidade para prevenir a ação danosa
-        dos radicais livres nas células do seu corpo.
-    </div>
-
-    <div id="textoFinalMobile" style="margin-top: 1%;">
-        Que tal garantir um reforço para a sua saúde com doses terapêuticas? Conheça
-        a família Vitergan e invista na sua qualidade de vida.
-    </div>
-
-    <div style="margin-left: 7%;" data-aos="fade-up" data-aos-delay="50" data-aos-duration="3000">
-        <button id="finalMobile">COMPRAR AGORA</button>
-    </div>
-</div>
-        
-
-        <div id="fotoLegendaMobile" data-aos="fade-up" data-aos-delay="50" data-aos-duration="3000">
-            <div>
-                <img id="vitergans" src="imagens/Vitergans.png">
-            </div>
-            <div>
-                <p style = "margin-left: -60px;">Disponíveis em embalagens de 30 e 60 comprimidos.</p>
-            </div>
-        </div>
-    </div> -->
-
     <div id="rodape">
         <div id="sociais">
             <a id="social" href="https://www.facebook.com/vitergan.oficial/">
-                    <i class="fa fa-brands fa-facebook fa-2x"></i>
+                    <i class="fa fa-brands fa-facebook fa-1x"></i>
             </a>
     
             <a id="social" href="https://www.instagram.com/vitergan.oficial/">
-                    <i class="fa fa-brands fa-square fa-instagram fa-2x"></i>
+                    <i class="fa fa-brands fa-instagram fa-1x"></i>
             </a>
-
         </div>
         <div>
             <p id="direitos">© 2022 Marjan Farma. Todos os direitos reservados.</p>
         </div>
-        
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/802204386a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="Js/principal.js"></script>
     <script>
         AOS.init();
     </script>
