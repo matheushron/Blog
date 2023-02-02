@@ -1,5 +1,9 @@
 /* @import url(); */
 @media only screen and (min-width: 200px ){
+
+    html{
+        scroll-behavior: smooth;
+    }
     /* ao que tudo indica, basta eu colocar agora como o site fica com essas medidas */
 body{
     width: 100%;
@@ -9,13 +13,14 @@ div#imagem{
     background-image: none; 
 }
 header{
+    padding-left: 6%;
     display: inline;
 }
 button#botao1{
     width: 36%;
     border:none;
     background-color: #00000000;
-    margin-left:4%;
+    /* margin-left:4%; */
     margin-top: 5px;
 
 }
@@ -33,7 +38,7 @@ button#botao2{
 }
 .imagem-dentro-botao-topo2{
     height: auto;
-    width: 120%
+    width: 130%
 }
 h1#fonte-primeira-frase{
     margin-top: 10%;
@@ -43,9 +48,10 @@ h1#fonte-primeira-frase{
 div#texto{
     margin-top: 50px;
     margin-right: auto;
-    margin-left: 5%;
+    /* margin-left: 6%; */
     padding: 0;
     border: 0;
+    padding-left: 10%;
     /* font-size: 100%; */
     font: inherit;
     vertical-align: baseline;
@@ -56,7 +62,7 @@ h1#fonte{
     color: #004c97;
 }
 div#texto-numero-1{
-    padding-right: 00px;
+    padding-right: 10%;
    
     width: 100%;
     text-align: left;
@@ -67,12 +73,12 @@ div#confira-frase{
     font-size: 10px;
 }
 button#confira{
-    height: 40px;
+    height: 2em;
     background: #004c97;
     color: #ffffff !important;
     border-color: #004c97;
     font-size: 0.8em;
-    padding: 0.8em 1em;
+    /* padding: 0.8em 1em; */
     text-align: center;
     cursor:pointer;
     border:none;
@@ -80,20 +86,24 @@ button#confira{
     /* margin-left: 15px; */
 
     /* borda do botão */
-    border-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 5px;
+    /* border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
 }
 div#body2{
-    height: 170%;
+    /* height: 170%; */
     width: 100%;
     background-color: #f2f2f2;
     margin: 0px;
     padding: 0px;
     padding-top: 2em;
-    /* height: flex; */
+    margin-top: 10%;
+    padding-left: 8%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    height: auto;
 }
 h2#fonte2{
     margin-left: 10px;
@@ -104,7 +114,7 @@ h2#fonte2{
     color: #004c97;
 }
 p#text-body-2{
-    font-size: 15px;
+    font-size: 10px;
     margin-left: 10px;
     /* padding-right: 70px; */
 }
@@ -136,11 +146,13 @@ div#item{
     border-bottom-right-radius: 10px;
 }
 .texto-cel{
+    padding-right: 3.5%;
+    padding-left: 8%;
     margin-top: 10%;
 }
 p#textocel{
     font-weight: 600;
-    font-size: 15px;
+    font-size: 10px;
     padding-right: 5%;
     padding-left: 5%; 
     margin-top: 10px;
@@ -158,37 +170,34 @@ div#celulas{
     width: 70%;
     height: auto;
 }
-div#celula{
-    margin-top:0px;
-}
 div#celula1{
-    margin-top: 8px;
+    margin-top: 0.3em;
 }
 .strong-celulas{
-    font-size: 12px;
+    font-size: 5px;
 }
 .arrow-1 {
-    margin-top: 25px;
+    margin-top: 5px;
     height:30px;
     display: flex;
   }
   .arrow-1:before {
+    /* height: 15px; */
     content: "";
     background: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 0, 0));
-    width:50px;
+    width:70px;
     clip-path: polygon(0 10px,calc(100% - 15px) 10px,calc(100% - 15px) 0,100% 50%,calc(100% - 15px) 100%,calc(100% - 15px) calc(100% - 10px),0 calc(100% - 10px));
     animation: a1 1.25s infinite linear;
   }
   @keyframes a1 {
     90%,100%{flex-grow: 1}
   }
-h1#titulo-comoEvitar{
+h2#titulo-comoEvitar{
     color: #004c97;
     font-family: 'Myriad Pro', sans-serif;
-    margin-right: 0%;
-    margin-left: 5%;
+    padding-left: 5%;
     /* margin-left: 15px; */
-    font-size: 2.5em;
+    font-size: 20px;
     line-height: 1.50;
     font-family: 'Myriad Pro', sans-serif;
     font-weight: 700;
@@ -196,7 +205,7 @@ h1#titulo-comoEvitar{
     text-align: left;
 }
 div#textoDeFrutas{
-    font-size: 1em;
+    font-size: 10px;
     margin-left: 5%;
     padding-right: 5%;
     font-weight: 340;
@@ -209,8 +218,11 @@ img#frutas{
 }
 div#fundoBege{
     background-image: url('https://iuploads.scribblecdn.net/dfd21d64-01ba-4872-aa84-2ad980bb7215/global/imagelib/vitergan/pattern-ae0846b3548298b0803ab405070ae838f6e51195.png');
-    height:210%;
+    /* height:200%; */
+    height: auto;
     padding-top:0em;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 div#blocosVitaminas{
     margin-right: auto;
@@ -222,22 +234,28 @@ div#blocosVitaminas{
     text-align: center;
 }
 div#zinco{
+    padding: 5%;
     height: 40%;
 }
 div#vitaminaC{
+    padding: 5%;
     height: 30%;
 }
 div#vitaminaA{
-    height: 50%;
+    padding: 5%;
+    height: 70%;
 }
 div#vitaminaE{
+    padding: 5%;
     height: 30%;
 }
 div#cobre{
-    height: 30%;
+    padding: 5%;
+    height: 40%;
 }
 div#selenio{
-    height: 30%;
+    padding: 5%;
+    height: 50%;
 }
 i[name="seta-desce"]{
     display: none;
@@ -275,9 +293,11 @@ div#body3DeskTop{
     display: block;
     background-color: #f2f2f2 ;
     margin: auto;
-    padding: auto;
+    padding-left: 8%;
     padding-top: 1em;
-    height: 130%; 
+    /* height: 122%;  */
+    height: auto;
+    margin-top: -15px;
 }
 
 div#textoFinal{
@@ -294,24 +314,32 @@ button#final{
     background: #004c97;
     color: #ffffff !important;
     border-color: #004c97;
-    font-size: 0.8em;
-    padding: 0.8em 1em;
+    font-size:11px;
+    height: 2em;
     text-align: center;
     cursor:pointer;
     border:none;
 
     /* borda */
-    border-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 5px;
+    /* border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
 }
 img#vitergans{
     margin-top: -70px;
     width: 100%;
     height: auto;
     float: right; 
+}
+.divLegenda{
+    margin-left: -1em;
+}
+.disponibilidade{
+    color: #004c97;
+    font-size: 10px;
+    
 }
 div#fotoLegenda{
     margin-top: 100px;
@@ -322,8 +350,9 @@ div#fotoLegenda{
 }
 div#rodape{
     display: flex;
-    height: 100px;
+    height: 3em;
     background-color: #004c97; 
+    margin-top: -15px;
 }
 a#social{
     margin-top: 2%;
@@ -346,12 +375,15 @@ i{
     margin-left: 10%;
     cursor: pointer;
 }
+.divDireitos{
+    margin-left: -4em;
+}
 p#direitos{
-    margin-left: 20px;
+    margin-left: -20px;
     float: center;
     color: #ffffff;
-    margin-top: 17%;
-    margin-right: 6px;
+    margin-top: 18px;
+    /* margin-right: 6px; */
     font-size: 10px;
 }
 .popup-wrapper{
@@ -397,13 +429,14 @@ p#direitos{
     font-weight: 800;
 }
 .referenciaButton{
-    margin-top: 24.5em; 
+    margin-top: 36.9em; 
     background-color:rgba(0, 0, 0, 0); 
     border:none; 
     font-weight: 700;
+    margin-left: -3px;
 }
 .texto-botao-referencia{
-    margin-top: 45px;
+    margin-top: 65em;
     text-decoration:underline;
     color: #fa5d02;
     font-weight: 100;
@@ -414,6 +447,10 @@ p#direitos{
 }
 }
 @media only screen and (min-width: 700px ){
+
+    html{
+        scroll-behavior: smooth;
+    }
     /* ao que tudo indica, basta eu colocar agora como o site fica com essas medidas */
     body{
         width: 100%;
@@ -429,11 +466,11 @@ p#direitos{
     background-size: cover;
     box-sizing: border-box;
     padding-bottom: 0em;
-    height: 63%;
+    height: auto;
     padding-top: 1%;
     margin-right: auto;
     margin-left: auto; 
-    /* background-image: none;  */
+    background-image: none; 
 
 }
 header{
@@ -473,25 +510,29 @@ div#texto{
     vertical-align: baseline;
 }
 h1#fonte-primeira-frase{
+    margin-left: 8%;
     margin-top: -2px;
-    font-size: 1.5em;
+    font-size: 2.5em;
     text-align: left;
     color: #004c97;
 }
 div#texto-numero-1{
-    padding-right: 200px;
+    padding-right: 0em;
     width: 80%;
     text-align: left;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 600;
+    margin-left: 8%;
 }
 div#confira-frase{
     margin-top: 2%;
-    padding-right: 350px;
-    font-size: 1em;
+    padding-right: 2.5em;
+    font-size: 1.5em;
     font-weight: 600;
+    margin-left: 8%;
 }
 button#confira{
+    margin-left: 8%;
     height: 40px;
     background: #004c97;
     color: #ffffff !important;
@@ -517,11 +558,14 @@ div#body2{
     margin: 0px;
     padding: 0px;
     padding-top: 2em;
-    height: 320%;
+    /* height: 190%; */
+    height: auto;
+    margin-top: 2em;
+    padding-bottom: 3%;
 }
 h2#fonte2{
     font-size: 2.5em;
-    margin-left: 20%;
+    margin-left: 13%;
     padding-right: 70px;
     font-weight: 700;
     text-align: left;
@@ -529,7 +573,7 @@ h2#fonte2{
 }
 p#text-body-2{
     font-size: 1em;
-    margin-left: 20%;
+    margin-left: 13%;
     padding-right: 20%;
     font-weight: 600;
 }
@@ -561,6 +605,7 @@ div#item{
 }
 div#texto-de-celulas{
     margin-top: -7%;
+    font-size: 1.5em
 }
 p#textocel{
     font-weight: 600;
@@ -600,17 +645,22 @@ div#celulas{
   @keyframes a1 {
     90%,100%{flex-grow: 1}
   }
-h1#titulo{
+h2#titulo-comoEvitar{
     color: #004c97;
     font-family: 'Myriad Pro', sans-serif;
-    margin-right: 0%;
-    /* margin-left: 15px; */
-    font-size: 2.0em;
+    margin-left: 1%;
+    font-size: 2em;
     line-height: 1.50;
     font-family: 'Myriad Pro', sans-serif;
     font-weight: 700;
     padding-top: 0.5em;
-    text-align: center;
+    text-align: left;
+}
+div#textoDeFrutas{
+    font-weight: 600;
+    font-size: 15px;
+    padding-right: 5%;
+    padding-left: 1%; 
 }
 img#frutas{
     margin-left: 10%;
@@ -620,7 +670,8 @@ img#frutas{
 }
 div#fundoBege{
     background-image: url('https://iuploads.scribblecdn.net/dfd21d64-01ba-4872-aa84-2ad980bb7215/global/imagelib/vitergan/pattern-ae0846b3548298b0803ab405070ae838f6e51195.png');
-    height:250%;
+    /* height:130%; */
+    height: auto;
     padding-top:0em;
 }
 div#blocosVitaminas{
@@ -631,6 +682,30 @@ div#blocosVitaminas{
     float: left;
     font-weight: bold;
     text-align: center;
+}
+div#zinco{
+    padding: 5%;
+    height: 35%;
+}
+div#vitaminaC{
+    padding: 5%;
+    height: 30%;
+}
+div#vitaminaA{
+    padding: 5%;
+    height: 40%;
+}
+div#vitaminaE{
+    padding: 5%;
+    height: 30%;
+}
+div#cobre{
+    padding: 5%;
+    height: 30%;
+}
+div#selenio{
+    padding: 5%;
+    height: 30%;
 }
 button#popupButton{
     display: none;
@@ -650,6 +725,10 @@ button#popupButtonCobre{
 button#popupButtonSelenio{
     display: none;
 }
+.texto-botao-referencia{
+    margin-top: 59em;
+    margin-left: 4em;
+}
 
 div#body3DeskTop{
     display: block;
@@ -657,14 +736,15 @@ div#body3DeskTop{
     margin: auto;
     padding: auto;
     padding-top: 1em;
-    height: 120%;
-    
+    /* height: 90%; */
+    height: auto;
+    margin-top: -15px;
 }
 div#textoFinal{
     padding-right: 5%;
     padding-left: 5%;
     text-align: left;
-    font-size: 3%;
+    font-size: 1.5em;
     font: inherit;
     width: 100%;
 }
@@ -675,23 +755,26 @@ button#final{
     color: #ffffff !important;
     border-color: #004c97;
     font-size: 0.8em;
-    padding: 0.8em 1em;
     text-align: center;
     cursor:pointer;
     border:none;
+    height: 2.5em;
 
     /* borda */
-    border-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 5px;
+    /* border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
 }
 img#vitergans{
     margin-top: -30px;
     width: 100%;
     height: auto;
     float: right; 
+}
+.disponibilidade{
+    font-size: 1.5em;
 }
 div#fotoLegenda{
     margin-top: 80px;
@@ -700,12 +783,13 @@ div#fotoLegenda{
     font-weight: bolder;
 }
 div#rodape{
+    margin-top: -15px;
     display: flex;
     height: 70px;
     background-color: #004c97; 
 }
 div#sociais{
-    margin-top: 3%;
+    margin-top: 1%;
 }
 button#social{
     height: 30px;
@@ -722,11 +806,15 @@ i{
     padding-left: 0px;
     cursor: pointer;
 }
+.divDireitos{
+    width: 50%;
+}
 p#direitos{
-    margin-left: 20px;
-    float: center;
+    margin-top: 5.5%;
+    /* float: center; */
     color: #ffffff;
-    margin-right: 6px;
+    margin-left: -20%;
+    font-size: 18px;
 }
 .popup-wrapper{
     display: none;
@@ -812,7 +900,7 @@ button#botao1{
     width: 36%;
     border:none;
     background-color: #00000000;
-    margin-left:0%;
+    margin-left: -10.5em;
     margin-top: 5px;
 
 }
@@ -820,7 +908,7 @@ button#botao2{
     width: 36%;
     border: none;
     background-color: #00000000;
-    margin-left: -50px;
+    margin-left: -17em;
     margin-top: 15px;
 
 }
@@ -842,24 +930,28 @@ div#texto{
     vertical-align: baseline;
 }
 h1#fonte-primeira-frase{
+    margin-left: 0%;
     margin-top:-5%;
     font-size: 3.6em;
     text-align: left;
     color: #004c97;
 }
 div#texto-numero-1{
-    margin-top: 40px;
+    margin-top: 3.5em;
     padding-right: 650px;
     width: 100%;
     text-align: left;
     font-size: 20px;
     font-weight: 600;
+    margin-left: 0%;
 }
 div#confira-frase{
     margin-top: 30px;
     padding-right: 50px;
     font-size: 20px;
     font-weight: 600;
+    margin-left: 0%;
+
 }
 button#confira{
     height: 40px;
@@ -872,6 +964,8 @@ button#confira{
     cursor:pointer;
     border:none;
     margin-top: 20px;
+    margin-left: 0%;
+
     /* margin-left: 15px; */
 
     /* borda do botão */
@@ -885,24 +979,21 @@ div#body2{
     width: 100%;
     background-color: #f2f2f2;
     margin: 0px;
-    padding: 0px;
     padding-top: 2em;
     height: 150%;
+    
 }
 h2#fonte2{
-    margin-left: 10px;
-    padding-right: 70px;
+    margin-left: 2em;
     font-weight: 700;
     font-size: 2.5em;
     text-align: center;
     color: #004c97;
 }
 p#text-body-2{
+    margin-left: 25em;
     font-size: 15px;
-    margin-left: 90px;
     text-align: left;
-    padding-left: 250px;
-    padding-right: 330px;
     font-weight: 500;
 
 }
@@ -912,16 +1003,11 @@ div#piramide{
 img#piramide{
     display: flex;
     width: 60%;
-    /* height: 50%; */
 }
 div#itens{
-    /* margin-left: 35px; */
-    /* padding-left: 5%;  */
-    /* padding-right:5%; */
     width: 55%;
     text-align: center;
     font-size: 20px;
-    /* display: inline; */
 }
 
 div#item{
@@ -955,11 +1041,10 @@ div#celulas{
     margin-right: 1px;
     margin-left:12% ;  
     padding-top: 0em;
+    padding-left: 10%;
+    padding-right: 10%;
     text-align: center;
     float: center;
-}
-div#celula{
-    margin-top:10px;
 }
 div#texto-de-celulas{
     margin-top: -7%;
@@ -969,7 +1054,7 @@ div#texto-de-celulas{
 }
 .arrow-1 {
     transform: rotate(360deg);
-    margin-left: 5%;
+    margin-left: -3%;
     margin-top: 55px;
     width:70px;
     height:30px;
@@ -980,16 +1065,16 @@ div#texto-de-celulas{
     background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
     width:30px;
     clip-path: polygon(0 10px,calc(100% - 15px) 10px,calc(100% - 15px) 0,100% 50%,calc(100% - 15px) 100%,calc(100% - 15px) calc(100% - 10px),0 calc(100% - 10px));
-    animation: a1 1.25s infinite linear;
+    animation: a1 2.25s infinite linear;
   }
   @keyframes a1 {
     90%,100%{flex-grow: 1}
   }
-h1#titulo-comoEvitar{
+h2#titulo-comoEvitar{
     color: #004c97;
     font-family: 'Myriad Pro', sans-serif;
-    margin-left: 25%;
-    font-size: 2.0em;
+    margin-left: 20%;
+    font-size: 2em;
     line-height: 1.50;
     font-family: 'Myriad Pro', sans-serif;
     font-weight: 700;
@@ -997,9 +1082,10 @@ h1#titulo-comoEvitar{
     text-align: left;
 }
 div#textoDeFrutas{
-    margin-left: 25%;
+    margin-left: 24.5%;
     padding-right: 25%;
     font-weight: 600;
+    font-size: 1em;
 }
 img#frutas{
     margin-left: 0%;
@@ -1010,7 +1096,7 @@ img#frutas{
 }
 div#fundoBege{
     background-image: url('https://iuploads.scribblecdn.net/dfd21d64-01ba-4872-aa84-2ad980bb7215/global/imagelib/vitergan/pattern-ae0846b3548298b0803ab405070ae838f6e51195.png');
-    height:190%;
+    height:140%;
     padding-top:0em;
 }
 div#blocosVitaminas{
@@ -1037,36 +1123,54 @@ span#span{
      display: block;
     }
 div#zinco{
+    padding-top: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
     width: 16.7%;
-    height: 100px;
+    height: 10em;
 }
 div#vitaminaC{
+    padding-top: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
     width: 16.7%;
-    height: 100px;
+    height: 10em;
 }
 div#vitaminaA{
+    padding-top: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
     width: 16.7%;
-    height: 100px;
+    height: 10em;
 }
 div#vitaminaE{
+    padding-top: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
     width: 16.7%;
-    height: 100px;
+    height: 10em;
 }
 
 div#cobre{
+    padding-top: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
     width: 16.7%;
-    height: 100px;
+    height: 10em;
 }
 div#selenio{
+    padding-top: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
     width: 16.7%;
-    height: 100px;
+    height: 10em;
 }
 div#legendaVitaminas{
+    /* width: 1000px; */
     padding: 5px;
-    height: 200px;
+    height: 250px;
 }
 button#popupButton{
-    
     margin-left: 20%;
     display: block;
 }
@@ -1092,7 +1196,6 @@ button#popupButtonSelenio{
     margin-left: 20%;
     display: block;
 }
-
 div#body3DeskTop{
     display: block;
     background-color: #f2f2f2 ;
@@ -1113,6 +1216,7 @@ div#textoFinal{
     width: 100%;
 }
 button#final{
+    height: 3em;
     margin-left: 0px;
     margin-top: 15px;
     background: #004c97;
@@ -1137,6 +1241,9 @@ img#vitergans{
     height: auto;
     /* float: right;  */
 }
+.disponibilidade{
+    font-size: 1.1em;
+}
 div#fotoLegendaDeskTop{
     display: block;
     width: 50%;
@@ -1149,11 +1256,12 @@ div#fotoLegendaDeskTop{
 div#rodape{
     display: flex;
     width: 100%;
-    height: 6em;
+    height: 4em;
     background-color: #004c97; 
 }
 div#sociais{
-    margin-top: 1%;
+    margin-left: 5%;
+    margin-top: 0%;
     display: flex;
     width: 50%;
 }
@@ -1173,11 +1281,12 @@ i{
     cursor: pointer;
 }
 p#direitos{
+    font-size: 1em;
     padding-left: 10px;
     float: center;
     color: #ffffff;
-    margin-top: 16%;
-    margin-right: 0px;
+    margin-top: 3.5%;
+    margin-left: 13em;
 }
 .popup-wrapper{
     display: none;
@@ -1221,25 +1330,27 @@ p#direitos{
     border: none;
     font-weight: 800;
 }
-.botao-referencia-div{
+/* .botao-referencia-div{
     height: 10%;
     width: 90%;
     background-color: #004b97;
     margin-left: 73px;
     margin-top: 6em;
-}
-.referenciaButton{
-    height: 40px;
-    margin-left: 70px;
-    margin-top: 0em;
+} */
+/* .referenciaButton{
+    height: 0px;
+    margin-left: 60px;
+    margin-top: 6.9em;
     background-color:rgba(0, 0, 0, 0); 
     border:none; 
-}
+} */
 .texto-botao-referencia{
-    margin-top: 45px;
+    cursor: pointer;
     text-decoration:underline;
     color: #fa5d02;
     font-weight: 100;
+    margin-top: 10em;
+    margin-left: 4em;
 }
 .textoRef{
     font-size: 15px;
