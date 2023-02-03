@@ -16,47 +16,76 @@
 <body>
     <div id="imagem" class="imagem">
         <header>
-            
-                <a href="https://vitergan.com.br/">
-                    <button id="botao1"><img class="imagem-dentro-botao-topo" src="imagens/ViterganZinco.png" width="160" height="40"></button>
-                </a>
-            
-            
-                <a href="https://vitergan.com.br/">
-                    <button id="botao2"><img class="imagem-dentro-botao-topo2" src="imagens/ViterganZincoPL.png" width="160" height="40"></button>
-                </a>
-            
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <a href="https://vitergan.com.br/">
+                        <button id="botao1"><img class="imagem-dentro-botao-topo" src="imagens/ViterganZinco.png" width="160" height="40"></button>
+                    </a>
+                  </div>
+                  <div class="col-sm">
+                    <a href="https://vitergan.com.br/">
+                        <button id="botao2"><img class="imagem-dentro-botao-topo2" src="imagens/ViterganZincoPL.png" width="160" height="40"></button>
+                    </a>
+                  </div>
+                </div>
+              </div>
         </header>
-        <div id="texto">
-            <h1 id="fonte-primeira-frase">O que o Vitergan faz por você?</h1>
-            <div id="texto-numero-1">
-                A nossa saúde e bem-estar dependem de uma série de fatores, inclusive do bom funcionamento do nosso
-                organismo.Muitas vezes, é necessário suplementar alguns nutrientes para compensar deficiências
-                nutricionais e garantir que o corpo funcione da melhor forma possível. Você já conhece o Vitergan?
+
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <h1 id="fonte-primeira-frase">O que o Vitergan faz por você?</h1>
+              </div>
             </div>
-            <div id="confira-frase" >
-                Confira o conteúdo até o final para pegar todas as dicas e informações!
-            </div>
-            <div>
-                <a href="#body2">
-                    <button id="confira">
-                        Conferir
-                    </button>
-                </a>
-            </div>
-        </div>
+
+            <div class="row">
+                <div class="col-sm">
+                    <div id="texto-numero-1">
+                        A nossa saúde e bem-estar dependem de uma série de fatores, inclusive do bom funcionamento do nosso
+                        organismo.Muitas vezes, é necessário suplementar alguns nutrientes para compensar deficiências
+                        nutricionais e garantir que o corpo funcione da melhor forma possível. Você já conhece o Vitergan?
+                    </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm">
+                    <div id="confira-frase" >
+                        Confira o conteúdo até o final para pegar todas as dicas e informações!
+                    </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-sm">
+                    <a href="#body2">
+                        <button id="confira">
+                            Conferir
+                        </button>
+                    </a>
+                </div>
+              </div>
+          </div>
     </div>
 
     <div id="body2">
-        <div>
-            <h2 id="fonte2" >O que a pirâmide alimentar representa?</h2>
-
-            <p id="text-body-2">Esse é um recurso gráfico que ajuda a visualizar como deve ser o nosso
-                consumo
-                diário de cada tipo de nutriente. A divisão em pirâmide engloba diferentes tipos
-                de carboidratos, proteínas e gorduras. A busca desse equilíbrio nas escolhas alimentares
-                influencia a nossa saúde!</p>
-        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <h2 id="fonte2" >O que a pirâmide alimentar representa?</h2>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <p id="text-body-2">Esse é um recurso gráfico que ajuda a visualizar como deve ser o nosso
+                        consumo
+                        diário de cada tipo de nutriente. A divisão em pirâmide engloba diferentes tipos
+                        de carboidratos, proteínas e gorduras. A busca desse equilíbrio nas escolhas alimentares
+                        influencia a nossa saúde!</p>
+                </div>
+              </div>
+          </div>
         <div class="piramide-itens-lateral"> <!-- div para a parte da pirâmide e dos itens-->
             <div id="piramide" >
                     <img id="piramide" src="imagens/piramide.png" data-aos="zoom-in" data-aos-delay="50"
@@ -215,7 +244,8 @@
             </div> 
 
         <div id="dimensaoFrutas" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-            <img src="imagens/frutas.png" id="frutas">
+            
+            <img src="imagens/frutas.png" id="frutas">     
 
             <div id="blocosVitaminas" data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000">
 
@@ -234,7 +264,7 @@
                             <div style="background-color: #cbbca9;" id="legendaVitaminas">
                                 <p class="paragrafo-frutas">Possui ação antioxidante além de ligar-se em certos locais 
                                     nas células para impedira formação de radicais livres.</p>
-                               <span id="span" class="spanZinco">O Brasil enquadra-se em um nível de risco médio, sendo que uma parcela de 20,3%...</span> 
+                               <span id="span" class="spanZinco">Possui ação antioxidante, ligando-se em certos locais nas células para impedir...</span> 
                                <button id="popupButton" class="popup-button">
                                 Leia mais
                                 <i class="fa fa-plus-circle" aria-hidden="true" style="color: black;"></i>
@@ -246,7 +276,7 @@
                                     <div class="popup-close">x</div>
                                     <div class="popup-content">
                                         <h2>Zinco</h2>
-                                        <p>Possui ação antioxidante, ligando-se em <br>certos 
+                                        <p>Possui ação antioxidante, ligando-se em certos 
                                             locais nas células para impedir a formação de radicais 
                                             livres</p>
                                     </div>
@@ -272,7 +302,7 @@
                         <div>
                             <div style="background-color: #fdd066;" id="legendaVitaminas">
                                 <p class="paragrafo-frutas">Além da sua ação antioxidante, a vitamina C também auxilia na ação da vitamina E.</p>
-                                <span id="span" class="spanC">Para aumentar a utilização biológica do ferro e de outros minerais de origem vegetal...</span>
+                                <span id="span" class="spanC">Para aumentar a utilização biológica do ferro e de outros minerais de origem...</span>
                                 <button id="popupButtonC" class="popup-button">
                                     Leia mais
                                     <i class="fa fa-plus-circle" aria-hidden="true" style="color: black;"></i>
@@ -316,7 +346,7 @@
                             <div style="background-color: #f89053;" id="legendaVitaminas">
                                 <p class="paragrafo-frutas">Reduz a ação de redicais livres,moleculas liberadas em reações químicas que ocorrem normalmente no nosso 
                                     organismo, e que são responsáveis pleo envelhecimento do nosso corpo, causando diversas doenças.</p>
-                                <span id="span" class="spanA">A magnitude da inadequação no Brasil entre adultos para a ingestão de vitamina A foi de78%...</span>
+                                <span id="span" class="spanA">A magnitude da inadequação no Brasil entre adultos para a ingestão de vitamina...</span>
                             
                                 <button id="popupButtonA" class="popup-button">
                                     Leia mais
@@ -358,7 +388,7 @@
                         <div>
                             <div style="background-color: #ef4251; color:white;" id="legendaVitaminas">
                                 <p class="paragrafo-frutas">Um antioxidante, ou seja,impede a ação dos radicais livres.</p>
-                                <span id="span" class="spanE">Observou-se uma prevalência de inadequação no consumo de vitamina E de 99,9% em homense...</span>
+                                <span id="span" class="spanE">Observou-se uma prevalência de inadequação no consumo de vitamina E de...</span>
                             
                                 <button id="popupButtonE" class="popup-button">
                                     <p id="leiaMaisE" style="color: white;">Leia mais
@@ -401,7 +431,7 @@
                         <div>
                             <div id="legendaVitaminas" style=" color:white; background-color: #492e65">
                                 <p class="paragrafo-frutas">Auxiliar na ação de substâncias antioxidantes,tais como a superxido dismutase e ceruplasmina.</p>
-                                <span id="span" class="spanE">Alimentos-fonte de cobre: leguminosas (feijões, ervilhas e lentilhas)...</span>
+                                <span id="span" class="spanE">Alimentos-fonte de cobre: leguminosas (feijões, ervilhas e lentilhas), nozes...</span>
 
                             
                                 <button id="popupButtonCobre" class="popup-button">
@@ -443,7 +473,7 @@
                             <div id="legendaVitaminas" style=" color:white; background-color:#4f823c">
                                 <p class="paragrafo-frutas">Atuam no funcionamento de substâncias que participam da imnunidade antioxidante do 
                                     organismo, tais como a glutationa peroxidase e a tioredoxina redutase.</p>
-                                <span id="span" class="spanE">Alguns estudos realizados no Brasil demonstraram que o país apresenta...</span>
+                                <span id="span" class="spanE">Alguns estudos realizados no Brasil demonstraram que o país apresenta divergências...</span>
 
                                 <button id="popupButtonSelenio" class="popup-button">
                                     <p style="color: white;">Leia mais
@@ -460,15 +490,15 @@
                                         <h2>Selênio</h2>
                                         <p>Alguns estudos realizados no Brasil demonstraram que o país apresenta 
                                             divergências no conteúdo mineral nos solos, o que tem reflexos diretos 
-                                            na ingestão alimentar de selênio.<br>Estados como São Paulo e Mato Grosso 
+                                            na ingestão alimentar de selênio.<br><br>Estados como São Paulo e Mato Grosso 
                                             apresentaram as menores concentrações do mineral em refeições 
                                             analisadas em laboratório. Por outro lado, no Amazonas e em Santa 
-                                            Catarina, foram encontradas as maiores concentrações.<br>
+                                            Catarina, foram encontradas as maiores concentrações.<br><br>
                                             Alimentos como a castanha-do-brasil e o rim bovino são considerados 
                                             as melhores fontes de selênio. Carne bovina, frango, peixe e ovos, 
                                             além de serem ricos em proteínas, também apresentam quantidades 
                                             importantes de selênio e em muitos países são a principal fonte 
-                                            alimentar do mineral.<br>Alguns vegetais são denominados “acumuladores” 
+                                            alimentar do mineral.<br><br>Alguns vegetais são denominados “acumuladores” 
                                             de selênio, como alho, mostarda-indiana, brócolis, couve-de-bruxelas, 
                                             couve-rábano, couve-flor, repolho, cebola e alguns cogumelos.</p>
                                     </div>
@@ -478,10 +508,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <button class="referenciaButton" id="botaoReferencia" data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000">
-                <p class="texto-botao-referencia">Referências bibliográficas</p>
-             </button> -->
-             <p id="botaoReferencia" class="texto-botao-referencia" data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000">Referências bibliográficas</p>
+              <p id="botaoReferencia" class="texto-botao-referencia" data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000">Referências bibliográficas</p> 
         </div>
     </div>
 
@@ -521,17 +548,19 @@
 
     </div>
     <div id="rodape">
+
+        <p id="direitos">© 2023 Marjan Farma. Todos os direitos reservados.</p>
+
         <div id="sociais">
-            <a id="social" href="https://www.facebook.com/vitergan.oficial/">
-                    <i class="fa fa-brands fa-facebook fa-1x"></i>
-            </a>
-    
-            <a id="social" href="https://www.instagram.com/vitergan.oficial/">
-                    <i class="fa fa-brands fa-instagram fa-1x"></i>
-            </a>
-        </div>
-        <div class="divDireitos">
-            <p id="direitos">© 2022 Marjan Farma. Todos os direitos reservados.</p>
+            <p class="compartilhe">Compartilhe:
+                <a id="social" href="https://www.facebook.com/vitergan.oficial/">
+                    <i class="fa fa-brands fa-facebook "></i>
+                </a>
+
+                <a id="social" href="https://www.instagram.com/vitergan.oficial/">
+                    <i class="fa fa-brands fa-instagram "></i>
+                </a>
+            </p>
         </div>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

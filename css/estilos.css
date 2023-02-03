@@ -11,6 +11,8 @@ body{
 div#imagem{
     width: 100%;
     background-image: none; 
+    height: auto;
+    padding-bottom: 5em;
 }
 header{
     padding-left: 6%;
@@ -20,7 +22,7 @@ button#botao1{
     width: 36%;
     border:none;
     background-color: #00000000;
-    /* margin-left:4%; */
+    margin-left: -10%;
     margin-top: 5px;
 
 }
@@ -28,8 +30,8 @@ button#botao2{
     width: 36%;
     border: none;
     background-color: #00000000;
-    margin-left: 20px;
-    margin-top: 15px;
+    margin-left: 6em;
+    margin-top: -1.8em;
 
 }
 .imagem-dentro-botao-topo{
@@ -42,11 +44,11 @@ button#botao2{
 }
 h1#fonte-primeira-frase{
     margin-top: 10%;
-    font-size: 2em;
+    font-size: 1.2em;
     color: #004c97;
 }
 div#texto{
-    margin-top: 50px;
+    margin-top: 5%;
     margin-right: auto;
     /* margin-left: 6%; */
     padding: 0;
@@ -63,14 +65,15 @@ h1#fonte{
 }
 div#texto-numero-1{
     padding-right: 10%;
-   
     width: 100%;
     text-align: left;
-    font-size: 10px;
+    font-size: 11px;
+    margin-top: 2em;
 }
 div#confira-frase{
     padding-right: 50px;
     font-size: 10px;
+    margin-top: 1em;
 }
 button#confira{
     height: 2em;
@@ -78,12 +81,10 @@ button#confira{
     color: #ffffff !important;
     border-color: #004c97;
     font-size: 0.8em;
-    /* padding: 0.8em 1em; */
     text-align: center;
     cursor:pointer;
     border:none;
-    margin-top: 10px;
-    /* margin-left: 15px; */
+    margin-top: 15px;
 
     /* borda do botão */
     border-radius: 5px;
@@ -106,16 +107,16 @@ div#body2{
     height: auto;
 }
 h2#fonte2{
-    margin-left: 10px;
-    padding-right: 70px;
+    margin-left: -1em;
+    /* padding-right: 70px; */
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.2em;
     text-align: left;
     color: #004c97;
 }
 p#text-body-2{
     font-size: 10px;
-    margin-left: 10px;
+    margin-left: -1.8em;
     /* padding-right: 70px; */
 }
 
@@ -243,7 +244,7 @@ div#vitaminaC{
 }
 div#vitaminaA{
     padding: 5%;
-    height: 70%;
+    height: 65%;
 }
 div#vitaminaE{
     padding: 5%;
@@ -251,7 +252,7 @@ div#vitaminaE{
 }
 div#cobre{
     padding: 5%;
-    height: 40%;
+    height: 36%;
 }
 div#selenio{
     padding: 5%;
@@ -349,25 +350,29 @@ div#fotoLegenda{
     font-weight: bolder;
 }
 div#rodape{
-    display: flex;
-    height: 3em;
+    /* display: flex; */
+    height: 5em;
     background-color: #004c97; 
     margin-top: -15px;
+}
+.compartilhe{
+    margin-top: -1em;
+    margin-left: 3.5em;
+    color: white;
 }
 a#social{
     margin-top: 2%;
     height: auto;
-    width: 10%;
+    width: 100%;
     text-align: center;
     background-color: #00000000;
     border: none;
-    margin-right: 4%;
+    /* margin-right: 4%; */
     margin-left: 6%;
     cursor: pointer;
 }
 div#sociais{
-    display: flex;
-    width: 50%;
+    width: 100%;
 }
 i{
     color: white;
@@ -376,15 +381,15 @@ i{
     cursor: pointer;
 }
 .divDireitos{
-    margin-left: -4em;
+    margin-left: 4em;
 }
 p#direitos{
-    margin-left: -20px;
+    margin-left: 6em;
     float: center;
     color: #ffffff;
-    margin-top: 18px;
+    padding-top: 1em;
     /* margin-right: 6px; */
-    font-size: 10px;
+    font-size: 0.6em;
 }
 .popup-wrapper{
     display: none;
@@ -396,14 +401,16 @@ p#direitos{
     height: 100%;
 }
 .popup{
-    height: 50%;
+    height: auto;
     text-align: left;
     width: 100%;
     max-width: 100%;
     margin: 10% auto;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     background: white;
     position: relative;
+    padding-bottom: 2em;
 
     /* borda do popup */
     border-radius: 10px;
@@ -436,10 +443,11 @@ p#direitos{
     margin-left: -3px;
 }
 .texto-botao-referencia{
-    margin-top: 65em;
+    margin-top: 101em;
     text-decoration:underline;
     color: #fa5d02;
     font-weight: 100;
+    font-size: 10px;
 }
 .textoRef{
     font-size: 10px;
@@ -670,8 +678,8 @@ img#frutas{
 }
 div#fundoBege{
     background-image: url('https://iuploads.scribblecdn.net/dfd21d64-01ba-4872-aa84-2ad980bb7215/global/imagelib/vitergan/pattern-ae0846b3548298b0803ab405070ae838f6e51195.png');
-    /* height:130%; */
-    height: auto;
+    height:190%;
+    /* height: auto; */
     padding-top:0em;
 }
 div#blocosVitaminas{
@@ -726,8 +734,8 @@ button#popupButtonSelenio{
     display: none;
 }
 .texto-botao-referencia{
-    margin-top: 59em;
-    margin-left: 4em;
+    margin-top: 94em;
+    margin-left: 10%;
 }
 
 div#body3DeskTop{
@@ -785,11 +793,28 @@ div#fotoLegenda{
 div#rodape{
     margin-top: -15px;
     display: flex;
-    height: 70px;
+    width: 100%;
+    height: 8%;
     background-color: #004c97; 
 }
+.divDireitos{
+    width: 100%;
+}
+p#direitos{
+    width: 100%;
+    margin-right: 0%;
+    font-size: 15px;
+    color: white;
+}
 div#sociais{
-    margin-top: 1%;
+    width: 100%;
+    margin-top: 0.5%;
+}
+.compartilhe{
+    width: 100%;
+    margin-top: 0.5%;
+    margin-left: 0em;
+    color: white;
 }
 button#social{
     height: 30px;
@@ -798,23 +823,13 @@ button#social{
     background-color: #00000000;
     border: none;
     margin-right: 4%;
-    margin-left: 4%;
+    margin-left: 1%;
     cursor: pointer;
 }
 i{
     color: white;
     padding-left: 0px;
     cursor: pointer;
-}
-.divDireitos{
-    width: 50%;
-}
-p#direitos{
-    margin-top: 5.5%;
-    /* float: center; */
-    color: #ffffff;
-    margin-left: -20%;
-    font-size: 18px;
 }
 .popup-wrapper{
     display: none;
@@ -885,8 +900,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
-    padding-bottom: 0em;
-    height: 80%;
+    padding-bottom: 4%;
+    height: auto;
     padding-top: 1%;
     margin-right: auto;
     margin-left: auto; 
@@ -900,7 +915,7 @@ button#botao1{
     width: 36%;
     border:none;
     background-color: #00000000;
-    margin-left: -10.5em;
+    margin-left: -13.5em;
     margin-top: 5px;
 
 }
@@ -909,48 +924,49 @@ button#botao2{
     border: none;
     background-color: #00000000;
     margin-left: -17em;
-    margin-top: 15px;
+    margin-top: 5px;
 
 }
 .imagem-dentro-botao-topo{
-    width: 40%;
+    width: 170%;
     height: auto;
 }
 .imagem-dentro-botao-topo2{
-    width: 45%;
+
+    width: 190%;
     height: auto;
 }
 div#texto{
     margin-top: 9%;
     margin-right: auto;
     margin-left: 5%;
-    padding: 0;
+    padding-right: 10em;
     border: 0;
     font: inherit;
     vertical-align: baseline;
 }
 h1#fonte-primeira-frase{
-    margin-left: 0%;
-    margin-top:-5%;
+    margin-left: -13%;
+    margin-top: 5%;
     font-size: 3.6em;
     text-align: left;
     color: #004c97;
 }
 div#texto-numero-1{
-    margin-top: 3.5em;
-    padding-right: 650px;
+    margin-top: 1.5em;
+    padding-right: 20%;
     width: 100%;
     text-align: left;
     font-size: 20px;
     font-weight: 600;
-    margin-left: 0%;
+    margin-left: -13%;
 }
 div#confira-frase{
     margin-top: 30px;
     padding-right: 50px;
     font-size: 20px;
     font-weight: 600;
-    margin-left: 0%;
+    margin-left: -13%;
 
 }
 button#confira{
@@ -964,7 +980,7 @@ button#confira{
     cursor:pointer;
     border:none;
     margin-top: 20px;
-    margin-left: 0%;
+    margin-left: -13%;
 
     /* margin-left: 15px; */
 
@@ -980,18 +996,20 @@ div#body2{
     background-color: #f2f2f2;
     margin: 0px;
     padding-top: 2em;
-    height: 150%;
+    height: auto;
+    padding-bottom: 2%;
     
 }
 h2#fonte2{
-    margin-left: 2em;
+    margin-left: -1.5em;
     font-weight: 700;
     font-size: 2.5em;
     text-align: center;
     color: #004c97;
 }
 p#text-body-2{
-    margin-left: 25em;
+    padding-right: 2em;
+    margin-left: 8em;
     font-size: 15px;
     text-align: left;
     font-weight: 500;
@@ -1014,6 +1032,8 @@ div#item{
     background-color: #004c97;
     margin-top: 0px;
     margin-top: 20px;
+    padding-left: 1em;
+    padding-right: 1em;
 
     /* arrumando a borda */
     border-radius: 10px;
@@ -1103,12 +1123,21 @@ div#blocosVitaminas{
     height: 50px;
     display: flex;
     margin-right: auto;
-    margin-left: auto;
+    /* margin-left: auto; */
     width:90%;
     margin-left: 5%;
     float: left;
     font-weight: bold;
     text-align: center;
+}
+.texto-botao-referencia{
+    width: 50%;
+    cursor: pointer;
+    text-decoration:underline;
+    color: #fa5d02;
+    font-weight: 100;
+    margin-top: 17em;
+    margin-left: 5%;
 }
 .divDeBaixo{
     display: none;
@@ -1167,42 +1196,42 @@ div#selenio{
 }
 div#legendaVitaminas{
     /* width: 1000px; */
-    padding: 5px;
+    padding-left: 15%;
+    padding-right: 15%;
     height: 250px;
 }
 button#popupButton{
-    margin-left: 20%;
+    margin-left: 7%;
     display: block;
 }
 button#popupButtonC{
-    
-    margin-left: 20%;
+    margin-left: 7%;
     display: block;
 }
 button#popupButtonA{
     
-    margin-left: 20%;
+    margin-left: 7%;
     display: block;
 }
 button#popupButtonE{
-    margin-left: 20%;
+    margin-left: 7%;
     display: block;
 }
 button#popupButtonCobre{
-    margin-left: 20%;
+    margin-left: 7%;
     display: block;
 }
 button#popupButtonSelenio{
-    margin-left: 20%;
+    margin-left: 7%;
     display: block;
 }
 div#body3DeskTop{
     display: block;
     background-color: #f2f2f2 ;
     margin: auto;
-    padding: auto;
+    padding-bottom: 2em;
     padding-top: 1em;
-    height: 60%;
+    height: auto;
     display: flex;
 }
 
@@ -1254,39 +1283,40 @@ div#fotoLegendaDeskTop{
     font-weight: bolder;
 }
 div#rodape{
-    display: flex;
+    /* display: flex; */
     width: 100%;
     height: 4em;
     background-color: #004c97; 
 }
+p#direitos{
+    font-size: 1em;
+    float: center;
+    color: #ffffff;
+    padding-right: 0%;
+    margin-left: 25em;
+}
+.compartilhe{
+    margin-top: 1.5%;
+    width: 50%;
+}
 div#sociais{
-    margin-left: 5%;
+    margin-left: -20%;
     margin-top: 0%;
     display: flex;
-    width: 50%;
+    width: 100%;
 }
 a#social{
     height: 30px;
-    width: 30px;
     text-align: center;
     background-color: #00000000;
     border: none;
-    margin-right: 4%;
-    padding-left: 10%;
+    margin-left: -5%;
     cursor: pointer;
 }
 i{
     color: white;
     padding-left: 0px;
     cursor: pointer;
-}
-p#direitos{
-    font-size: 1em;
-    padding-left: 10px;
-    float: center;
-    color: #ffffff;
-    margin-top: 3.5%;
-    margin-left: 13em;
 }
 .popup-wrapper{
     display: none;
@@ -1298,12 +1328,14 @@ p#direitos{
     height: 100%;
 }
 .popup{
-    height: 50%;
+    height: auto;
     text-align: left;
     width: 50%;
     max-width: 100%;
     margin: 10% auto;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 2em;
     background: white;
     position: relative;
 
@@ -1326,31 +1358,10 @@ p#direitos{
     font-size: 20px;
 }
 .popup-button{
+    width: 100%;
     background-color: #00000000;
     border: none;
     font-weight: 800;
-}
-/* .botao-referencia-div{
-    height: 10%;
-    width: 90%;
-    background-color: #004b97;
-    margin-left: 73px;
-    margin-top: 6em;
-} */
-/* .referenciaButton{
-    height: 0px;
-    margin-left: 60px;
-    margin-top: 6.9em;
-    background-color:rgba(0, 0, 0, 0); 
-    border:none; 
-} */
-.texto-botao-referencia{
-    cursor: pointer;
-    text-decoration:underline;
-    color: #fa5d02;
-    font-weight: 100;
-    margin-top: 10em;
-    margin-left: 4em;
 }
 .textoRef{
     font-size: 15px;
