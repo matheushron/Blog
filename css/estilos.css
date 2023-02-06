@@ -12,7 +12,7 @@ div#imagem{
     width: 100%;
     background-image: none; 
     height: auto;
-    padding-bottom: 5em;
+    padding-bottom: 1em;
 }
 header{
     padding-left: 6%;
@@ -108,7 +108,6 @@ div#body2{
 }
 h2#fonte2{
     margin-left: -1em;
-    /* padding-right: 70px; */
     font-weight: 700;
     font-size: 1.2em;
     text-align: left;
@@ -117,7 +116,6 @@ h2#fonte2{
 p#text-body-2{
     font-size: 10px;
     margin-left: -1.8em;
-    /* padding-right: 70px; */
 }
 
 img#piramide{
@@ -289,6 +287,10 @@ button#popupButtonCobre{
 button#popupButtonSelenio{
     display: none;
 }
+.popup-content{
+    height: auto;
+    padding-bottom: 2em;
+}
 
 div#body3DeskTop{
     display: block;
@@ -296,7 +298,6 @@ div#body3DeskTop{
     margin: auto;
     padding-left: 8%;
     padding-top: 1em;
-    /* height: 122%;  */
     height: auto;
     margin-top: -15px;
 }
@@ -323,10 +324,6 @@ button#final{
 
     /* borda */
     border-radius: 5px;
-    /* border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
 }
 img#vitergans{
     margin-top: -70px;
@@ -353,7 +350,7 @@ div#rodape{
     /* display: flex; */
     height: 5em;
     background-color: #004c97; 
-    margin-top: -15px;
+    margin-top: -10px;
 }
 .compartilhe{
     margin-top: -1em;
@@ -410,7 +407,10 @@ p#direitos{
     padding-right: 20px;
     background: white;
     position: relative;
-    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    
 
     /* borda do popup */
     border-radius: 10px;
@@ -450,7 +450,7 @@ p#direitos{
     font-size: 10px;
 }
 .textoRef{
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 700;
 }
 }
@@ -485,19 +485,19 @@ header{
     display: inline;
 }
 button#botao1{
-    width: 36%;
+    width: 120%;
     border:none;
     background-color: #00000000;
-    margin-left:0%;
+    margin-left:-31%;
     margin-top: 5px;
 
 }
 button#botao2{
-    width: 36%;
+    width: 120%;
     border: none;
     background-color: #00000000;
-    margin-left: -50px;
-    margin-top: 15px;
+    margin-left: -40%;
+    margin-top: 5px;
 
 }
 .imagem-dentro-botao-topo{
@@ -518,29 +518,30 @@ div#texto{
     vertical-align: baseline;
 }
 h1#fonte-primeira-frase{
-    margin-left: 8%;
-    margin-top: -2px;
+    margin-left: 0%;
+    margin-top: 1em;
     font-size: 2.5em;
     text-align: left;
     color: #004c97;
 }
 div#texto-numero-1{
+    margin-top: 0.5em;
     padding-right: 0em;
-    width: 80%;
+    width: 100%;
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 600;
-    margin-left: 8%;
+    margin-left: 0%;
 }
 div#confira-frase{
     margin-top: 2%;
     padding-right: 2.5em;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 600;
-    margin-left: 8%;
+    margin-left: 0%;
 }
 button#confira{
-    margin-left: 8%;
+    margin-left: 0%;
     height: 40px;
     background: #004c97;
     color: #ffffff !important;
@@ -566,23 +567,23 @@ div#body2{
     margin: 0px;
     padding: 0px;
     padding-top: 2em;
-    /* height: 190%; */
     height: auto;
     margin-top: 2em;
     padding-bottom: 3%;
 }
 h2#fonte2{
-    font-size: 2.5em;
-    margin-left: 13%;
-    padding-right: 70px;
+    width: 100%;
+    font-size: 1.5em;
+    margin-left: 0%;
+    /* padding-right: 70px; */
     font-weight: 700;
     text-align: left;
     color: #004c97;
 }
 p#text-body-2{
     font-size: 1em;
-    margin-left: 13%;
-    padding-right: 20%;
+    margin-left: 0%;
+    width: 100%;
     font-weight: 600;
 }
 img#piramide{
@@ -737,6 +738,10 @@ button#popupButtonSelenio{
     margin-top: 94em;
     margin-left: 10%;
 }
+.popup-content{
+    height: auto;
+    padding-bottom: 2em;
+}
 
 div#body3DeskTop{
     display: block;
@@ -802,6 +807,7 @@ div#rodape{
 }
 p#direitos{
     width: 100%;
+    margin-left: 1em;
     margin-right: 0%;
     font-size: 15px;
     color: white;
@@ -811,9 +817,8 @@ div#sociais{
     margin-top: 0.5%;
 }
 .compartilhe{
-    width: 100%;
-    margin-top: 0.5%;
-    margin-left: 0em;
+    margin-top: 0.0%;
+    margin-left: 2em;
     color: white;
 }
 button#social{
@@ -841,7 +846,7 @@ i{
     height: 100%;
 }
 .popup{
-    height: 50%;
+    height: auto;
     text-align: left;
     width: 100%;
     max-width: 100%;
@@ -849,6 +854,7 @@ i{
     padding: 20px;
     background: white;
     position: relative;
+    padding-bottom: 0em;
 
     /* borda do popup */
     border-radius: 10px;
@@ -915,7 +921,7 @@ button#botao1{
     width: 36%;
     border:none;
     background-color: #00000000;
-    margin-left: -13.5em;
+    margin-left: -25%;
     margin-top: 5px;
 
 }
@@ -923,8 +929,8 @@ button#botao2{
     width: 36%;
     border: none;
     background-color: #00000000;
-    margin-left: -17em;
-    margin-top: 5px;
+    margin-left: -66%;
+    margin-top: 7px;
 
 }
 .imagem-dentro-botao-topo{
@@ -946,7 +952,7 @@ div#texto{
     vertical-align: baseline;
 }
 h1#fonte-primeira-frase{
-    margin-left: -13%;
+    margin-left: -7.5%;
     margin-top: 5%;
     font-size: 3.6em;
     text-align: left;
@@ -959,14 +965,14 @@ div#texto-numero-1{
     text-align: left;
     font-size: 20px;
     font-weight: 600;
-    margin-left: -13%;
+    margin-left: -7.5%;
 }
 div#confira-frase{
     margin-top: 30px;
     padding-right: 50px;
     font-size: 20px;
     font-weight: 600;
-    margin-left: -13%;
+    margin-left: -7.5%;
 
 }
 button#confira{
@@ -980,7 +986,7 @@ button#confira{
     cursor:pointer;
     border:none;
     margin-top: 20px;
-    margin-left: -13%;
+    margin-left: -7.5%;
 
     /* margin-left: 15px; */
 
@@ -1139,6 +1145,10 @@ div#blocosVitaminas{
     margin-top: 17em;
     margin-left: 5%;
 }
+/* .popup-content{
+    height: auto;
+    padding-bottom: 2em;
+} */
 .divDeBaixo{
     display: none;
 }
@@ -1296,7 +1306,7 @@ p#direitos{
     margin-left: 25em;
 }
 .compartilhe{
-    margin-top: 1.5%;
+    margin-top: 0.9%;
     width: 50%;
 }
 div#sociais{
@@ -1338,6 +1348,7 @@ i{
     padding-bottom: 2em;
     background: white;
     position: relative;
+    margin-top: 1em;
 
     /* borda do popup */
     border-radius: 10px;
